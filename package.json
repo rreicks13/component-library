@@ -1,0 +1,6 @@
+{
+  "name": "@tractorzoom/material-wrappers",
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
