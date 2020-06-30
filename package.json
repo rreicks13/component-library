@@ -1,5 +1,24 @@
 {
   "name": "@tractorzoom/material-wrappers",
+  "description": "Material UI wrapped components for common usage",
+  "author": "@TractorZoom",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TractorZoom/material-wrappers.git"
+  },
+  "homepage": "https://github.com/TractorZoom/material-wrappers",
+  "bugs": {
+    "url": "https://github.com/TractorZoom/material-wrappers/issues"
+  },
+  "keywords": [
+    "material-ui",
+    "theme"
+  ],
   "devDependencies": {
     "lerna": "^3.22.1"
   }
