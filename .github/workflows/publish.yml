@@ -17,7 +17,7 @@ jobs:
             - name: Lerna Bootstrap
               uses: m19c/action-lerna@master
               with:
-                  args: 'bootstrap'
+                  args: 'bootstrap -- --unsafe-perm'
             - run: npm test
 
     npm-publish:
@@ -32,7 +32,7 @@ jobs:
             - name: Lerna Bootstrap
               uses: m19c/action-lerna@master
               with:
-                  args: 'bootstrap -- --production'
+                  args: 'bootstrap -- --unsafe-perm'
             - name: Lerna Publish
               uses: m19c/action-lerna@master
               with:
