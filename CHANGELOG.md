@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.4](https://github.com/TractorZoom/component-library/compare/v0.1.3...v0.1.4) (2020-07-02)
+
+
+### Bug Fixes
+
+* add fetch depth 0 when checking out for release ([e629c9a](https://github.com/TractorZoom/component-library/commit/e629c9a981594dae4208980d463ae36c9ad06d95))
+* add npm token env variable on publish ([249d659](https://github.com/TractorZoom/component-library/commit/249d659625cc79684d556bb3fc79cef2aa389c4b))
+* add width prop to proptypes ([6dbb2c2](https://github.com/TractorZoom/component-library/commit/6dbb2c2b4a7e130d09059274d19aebcafc34ae1e))
+
+
+
+
+
 ## 0.1.3 (2020-07-02)
 
 
