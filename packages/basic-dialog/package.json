@@ -19,7 +19,8 @@
     "keywords": [
         "material-ui",
         "dialog",
-        "mobile-dialog"
+        "mobile-dialog",
+        "mobile-first"
     ],
     "publishConfig": {
         "access": "public"
