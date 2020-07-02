@@ -13,6 +13,7 @@ jobs:
             - uses: actions/setup-node@v1
               with:
                   node-version: 12
+            - run: npm ci
             - name: Lerna Bootstrap
               uses: m19c/action-lerna@master
               with:
@@ -27,6 +28,7 @@ jobs:
             - uses: actions/setup-node@v1
               with:
                   node-version: 12
+            - run: npm ci
             - name: Lerna Bootstrap
               uses: m19c/action-lerna@master
               with:
@@ -46,6 +48,7 @@ jobs:
             - uses: actions/setup-node@v1
               with:
                   node-version: 12
+            - run: npm ci
             - name: Lerna Bootstrap
               uses: m19c/action-lerna@master
               with:
