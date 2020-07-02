@@ -38,7 +38,7 @@ BasicDialog.propTypes = {
     actionButtons: PropTypes.array,
     children: PropTypes.node,
     close: PropTypes.func.isRequired,
-    isOpen: PropTypes.bool.isRequired,
+    isOpen: PropTypes.bool,
     title: PropTypes.string.isRequired,
     width: PropTypes.string.isRequired,
 };
