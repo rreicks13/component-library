@@ -33,6 +33,7 @@ jobs:
             - run: npm ci
             - name: Lerna Bootstrap
               run: ./node_modules/.bin/lerna bootstrap
+            - run: npm whoami
             - name: Lerna Publish
               run: ./node_modules/.bin/lerna publish --create-release github --yes
               env:
