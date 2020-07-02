@@ -37,6 +37,7 @@ jobs:
               uses: m19c/action-lerna@master
               with:
                   args: 'publish --create-release github --yes'
+                  branch: master
               env:
                   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
