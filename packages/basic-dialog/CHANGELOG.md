@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/TractorZoom/component-library/compare/v0.1.4...v0.2.0) (2020-07-02)
+
+
+### Features
+
+* add mobile-first keyword to basic-dialog ([2626e87](https://github.com/TractorZoom/component-library/commit/2626e87579b5a69cc838d7e2b0e1f13257b6189f))
+
+
+
+
+
 ## [0.1.4](https://github.com/TractorZoom/component-library/compare/v0.1.3...v0.1.4) (2020-07-02)
 
 
