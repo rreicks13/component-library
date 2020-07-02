@@ -21,6 +21,9 @@
         "dialog",
         "mobile-dialog"
     ],
+    "publishConfig": {
+        "access": "public"
+    },
     "scripts": {
         "build": "../../node_modules/.bin/babel src --out-dir lib --copy-files",
         "prepublish": "npm run build"
