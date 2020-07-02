@@ -31,6 +31,7 @@ const BasicDialog = (props) => {
 
 BasicDialog.defaultProps = {
     actionButtons: [],
+    isOpen: false,
 };
 
 BasicDialog.propTypes = {
