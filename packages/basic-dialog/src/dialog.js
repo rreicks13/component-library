@@ -39,6 +39,7 @@ BasicDialog.propTypes = {
     close: PropTypes.func.isRequired,
     isOpen: PropTypes.bool.isRequired,
     title: PropTypes.string.isRequired,
+    width: PropTypes.string.isRequired,
 };
 
 export default withWidth()(BasicDialog);
