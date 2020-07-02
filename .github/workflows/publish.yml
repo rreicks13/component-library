@@ -30,14 +30,9 @@ jobs:
                   node-version: 12
             - run: npm ci
             - name: Lerna Bootstrap
-              uses: m19c/action-lerna@master
-              with:
-                  args: 'bootstrap -- --unsafe-perm'
+              run: ./node_modules/.bin/lerna bootstrap
             - name: Lerna Publish
-              uses: m19c/action-lerna@master
-              with:
-                  args: 'publish --create-release github --yes'
-                  branch: master
+              run: ./node_modules/.bin/lerna publish --create-release github --yes
               env:
                   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
