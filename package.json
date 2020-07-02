@@ -24,7 +24,8 @@
         "deploy-storybook": "sh deploy-gh-pages",
         "prettier:all": "prettier --write './**/*.*'",
         "pretty-quick": "pretty-quick",
-        "storybook": "start-storybook"
+        "storybook": "start-storybook",
+        "test": "jest"
     },
     "devDependencies": {
         "@babel/core": "7.10.4",
@@ -38,14 +39,17 @@
         "@storybook/addon-storysource": "5.3.19",
         "@storybook/addon-viewport": "5.3.19",
         "@storybook/react": "5.3.19",
+        "babel-jest": "26.1.0",
         "babel-loader": "8.1.0",
         "commitizen": "4.1.2",
         "husky": "4.2.5",
+        "jest": "26.1.0",
         "lerna": "^3.22.1",
         "prettier": "2.0.5",
         "pretty-quick": "2.0.1",
         "react": "16.13.1",
         "react-dom": "16.13.1",
+        "react-test-renderer": "16.13.1",
         "storybook-host": "5.1.0"
     },
     "config": {
