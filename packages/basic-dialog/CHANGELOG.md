@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/TractorZoom/component-library/compare/v0.2.0...v0.2.1) (2020-07-02)
+
+
+### Bug Fixes
+
+* add isOpen default value of false ([26efc5b](https://github.com/TractorZoom/component-library/commit/26efc5baddb44f59327be704a0bb48df05fa3786))
+* mark isOpen prop as not required ([c4691ad](https://github.com/TractorZoom/component-library/commit/c4691addf21381d49cc74ef30124a07495bc1af3))
+
+
+
+
+
 # [0.2.0](https://github.com/TractorZoom/component-library/compare/v0.1.4...v0.2.0) (2020-07-02)
 
 
