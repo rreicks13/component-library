@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/TractorZoom/component-library/compare/v0.1.1...v0.1.2) (2020-07-02)
+
+### Bug Fixes
+
+-   set publish config access to public ([e702e9c](https://github.com/TractorZoom/component-library/commit/e702e9cd54eaad0e8269831046d9eb6e3196fec9))
+
 ## [0.1.1](https://github.com/TractorZoom/component-library/compare/v0.1.0...v0.1.1) (2020-07-02)
 
 ### Bug Fixes
