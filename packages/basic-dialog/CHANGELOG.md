@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.4](https://github.com/TractorZoom/component-library/compare/v0.1.3...v0.1.4) (2020-07-02)
+
+
+### Bug Fixes
+
+* add width prop to proptypes ([6dbb2c2](https://github.com/TractorZoom/component-library/commit/6dbb2c2b4a7e130d09059274d19aebcafc34ae1e))
+
+
+
+
+
 ## 0.1.3 (2020-07-02)
 
 
