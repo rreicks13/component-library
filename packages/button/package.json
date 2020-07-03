@@ -1,0 +1,36 @@
+{
+    "name": "@tractorzoom/button",
+    "version": "0.0.0",
+    "description": "Wrapped Material UI button",
+    "author": "@TractorZoom",
+    "license": "MIT",
+    "main": "lib/index.js",
+    "engines": {
+        "node": "12.x"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/TractorZoom/component-library.git"
+    },
+    "homepage": "https://github.com/TractorZoom/component-library/packages/button/README.md",
+    "bugs": {
+        "url": "https://github.com/TractorZoom/component-library/issues"
+    },
+    "keywords": [
+        "material-ui",
+        "button",
+        "loading-button",
+        "disabled-button",
+        "button-with-icon"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "build": "../../node_modules/.bin/babel src --out-dir lib --copy-files",
+        "prepublish": "npm run build"
+    },
+    "peerDependencies": {
+        "@material-ui/core": "^4.10.2"
+    }
+}
