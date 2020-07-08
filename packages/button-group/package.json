@@ -18,7 +18,10 @@
     },
     "keywords": [
         "material-ui",
-        "button-group"
+        "button-group",
+        "buttons",
+        "scrollable",
+        "scrollable buttons"
     ],
     "publishConfig": {
         "access": "public"
