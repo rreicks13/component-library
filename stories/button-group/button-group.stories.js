@@ -1,6 +1,6 @@
 import ButtonGroup from '../../packages/button-group/src';
 import React from 'react';
-import propsMarkdown from '../utilities/props/button.md';
+import propsMarkdown from '../utilities/props/button-group.md';
 import { storiesOf } from '@storybook/react';
 
 storiesOf('Button Group', module).add(
