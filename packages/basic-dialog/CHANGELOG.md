@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.1](https://github.com/TractorZoom/component-library/compare/v0.4.0...v0.4.1) (2020-07-09)
+
+
+### Bug Fixes
+
+* align dialog padding for header contents and footer ([ef2e824](https://github.com/TractorZoom/component-library/commit/ef2e824109edd05d3743842c9b545401d8314237))
+
+
+
+
+
 # [0.4.0](https://github.com/TractorZoom/component-library/compare/v0.3.0...v0.4.0) (2020-07-08)
 
 **Note:** Version bump only for package @tractorzoom/basic-dialog
