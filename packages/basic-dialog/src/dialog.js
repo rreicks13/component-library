@@ -23,8 +23,8 @@ const BasicDialog = (props) => {
             <DialogTitle className={classes.titleContainer} disableTypography>
                 <Typography variant='h5'>{props.title}</Typography>
             </DialogTitle>
-            <DialogContent>{props.children || ''}</DialogContent>
-            <DialogActions>{props.actionButtons}</DialogActions>
+            <DialogContent className={classes.contentContainer}>{props.children || ''}</DialogContent>
+            <DialogActions className={classes.footerContainer}>{props.actionButtons}</DialogActions>
         </Dialog>
     );
 };
