@@ -1,5 +1,62 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`native select should render multi select 1`] = `
+<div
+  className="MuiFormControl-root MuiTextField-root MuiFormControl-marginDense"
+>
+  <div
+    className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-marginDense MuiOutlinedInput-marginDense"
+    onClick={[Function]}
+  >
+    <select
+      aria-invalid={false}
+      autoFocus={false}
+      className="MuiSelect-root MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
+      disabled={false}
+      multiple={true}
+      onAnimationStart={[Function]}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={false}
+    >
+      <option
+        className="some class name"
+        value="some value"
+      >
+        some label
+      </option>
+    </select>
+    <fieldset
+      aria-hidden={true}
+      className="PrivateNotchedOutline-root-1 MuiOutlinedInput-notchedOutline"
+      style={
+        Object {
+          "paddingLeft": 8,
+        }
+      }
+    >
+      <legend
+        className="PrivateNotchedOutline-legend-2"
+        style={
+          Object {
+            "width": 0.01,
+          }
+        }
+      >
+        <span
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "&#8203;",
+            }
+          }
+        />
+      </legend>
+    </fieldset>
+  </div>
+</div>
+`;
+
 exports[`native select should render with custom margin 1`] = `
 <div
   className="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal"

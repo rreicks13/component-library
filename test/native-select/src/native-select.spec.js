@@ -44,6 +44,27 @@ describe('native select', () => {
         expect(tree).toMatchSnapshot();
     });
 
+    it('should render multi select', () => {
+        // given
+        const mockData = {
+            multiple: true,
+            options: [
+                {
+                    className: 'some class name',
+                    label: 'some label',
+                    value: 'some value',
+                },
+            ],
+        };
+
+        // when
+        const component = renderer.create(<NativeSelect {...mockData} />);
+        let tree = component.toJSON();
+
+        // then
+        expect(tree).toMatchSnapshot();
+    });
+
     it('should render with custom variant', () => {
         // given
         const mockData = {

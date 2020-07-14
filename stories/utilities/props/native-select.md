@@ -1,10 +1,11 @@
 ### Native Select Props
 
-| value   | required | description                                                               |
-| ------- | -------- | ------------------------------------------------------------------------- |
-| margin  | no       | string of Material UI text field margin styling (defaults to `dense`)     |
-| options | yes      | array of option objects                                                   |
-| variant | no       | string of Material UI text field variant styling (defaults to `outlined`) |
+| value    | required | description                                                                |
+| -------- | -------- | -------------------------------------------------------------------------- |
+| margin   | no       | string for Material UI text field margin styling (defaults to `dense`)     |
+| multiple | no       | boolean to indicate multi-select is enabled (defaults to `false`)          |
+| options  | yes      | array of option objects                                                    |
+| variant  | no       | string for Material UI text field variant styling (defaults to `outlined`) |
 
 Additional props will be passed to [Material UI TextField](https://material-ui.com/api/text-field/)
 
