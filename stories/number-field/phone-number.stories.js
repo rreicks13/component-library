@@ -1,4 +1,4 @@
-import NumberField from '../../packages/number-field/src/number-field';
+import NumberField from '../../packages/number-field/src';
 import React, { useState } from 'react';
 import propsMarkdown from '../utilities/props/number-field.md';
 import { storiesOf } from '@storybook/react';
