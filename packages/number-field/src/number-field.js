@@ -2,7 +2,6 @@ import NumberFormatCustom from './number-format-custom';
 import TextField from '@material-ui/core/TextField';
 import PropTypes from 'prop-types';
 import React from 'react';
-import useStyles from './styles';
 
 const NumberField = (props) => {
     const {
@@ -19,12 +18,11 @@ const NumberField = (props) => {
         variant,
         ...other
     } = props;
-    const classes = useStyles();
 
     return (
         <TextField
             {...other}
-            className={`${classes.numberField} ${className}`}
+            className={className}
             error={error}
             fullWidth={fullWidth}
             helperText={error ? helperText : ''}
@@ -37,6 +35,7 @@ const NumberField = (props) => {
             label={label}
             margin={margin}
             onChange={onChange}
+            type='number'
             value={value}
             variant={variant}
         />
