@@ -5,6 +5,7 @@ import React from 'react';
 
 const NumberField = (props) => {
     const {
+        autoFocus,
         className,
         error,
         format,
@@ -29,7 +30,13 @@ const NumberField = (props) => {
             id='number-field'
             InputProps={{
                 inputComponent: (props) => (
-                    <NumberFormatCustom {...props} data-testid='number-field-input' format={format} name={name} />
+                    <NumberFormatCustom
+                        {...props}
+                        autoFocus={autoFocus}
+                        data-testid='number-field-input'
+                        format={format}
+                        name={name}
+                    />
                 ),
             }}
             label={label}
@@ -43,6 +50,7 @@ const NumberField = (props) => {
 };
 
 NumberField.defaultProps = {
+    autoFocus: false,
     className: '',
     error: false,
     fullWidth: true,
@@ -51,6 +59,7 @@ NumberField.defaultProps = {
 };
 
 NumberField.propTypes = {
+    autoFocus: PropTypes.bool,
     className: PropTypes.string,
     error: PropTypes.bool,
     fullWidth: PropTypes.bool,

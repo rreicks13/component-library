@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 const NumberFormatCustom = (props) => {
-    const { inputRef, format, onChange, prefix, ...other } = props;
+    const { autoFocus, inputRef, format, onChange, prefix, ...other } = props;
 
     return (
         <NumberFormat
             {...other}
             autoComplete='off'
-            autoFocus
+            autoFocus={autoFocus}
             format={format}
             getInputRef={inputRef}
             isNumericString
