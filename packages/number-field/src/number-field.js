@@ -27,7 +27,7 @@ const NumberField = (props) => {
             className={`${classes.numberField} ${className}`}
             error={error}
             fullWidth={fullWidth}
-            helperText={helperText}
+            helperText={error ? helperText : ''}
             id='number-field'
             InputProps={{
                 inputComponent: (props) => (
