@@ -1,0 +1,40 @@
+{
+    "name": "@tractorzoom/number-field",
+    "version": "0.7.0",
+    "description": "Wrapped Material UI Text Field with React-Number-Format",
+    "author": "@TractorZoom",
+    "license": "MIT",
+    "main": "lib/index.js",
+    "engines": {
+        "node": "12.x"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/TractorZoom/component-library.git"
+    },
+    "homepage": "https://github.com/TractorZoom/component-library/packages/number-field/README.md",
+    "bugs": {
+        "url": "https://github.com/TractorZoom/component-library/issues"
+    },
+    "keywords": [
+        "material-ui",
+        "textfield",
+        "number",
+        "number-format",
+        "number-input",
+        "react-number-format"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "build": "../../node_modules/.bin/babel src --out-dir lib --copy-files",
+        "prepublish": "npm run build"
+    },
+    "peerDependencies": {
+        "@material-ui/core": "^4.10.2"
+    },
+    "dependencies": {
+        "react-number-format": "4.4.1"
+    }
+}
