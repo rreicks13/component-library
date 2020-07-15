@@ -1,4 +1,4 @@
-# @tractorzoom/button
+# @tractorzoom/number-field
 
 Wrapped Material UI TextField with React-Number-Format
 
