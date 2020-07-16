@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.2](https://github.com/TractorZoom/component-library/compare/v0.8.1...v0.8.2) (2020-07-16)
+
+
+### Bug Fixes
+
+* changed number field to be base comp to fix focus issue ([b429515](https://github.com/TractorZoom/component-library/commit/b429515abef5baa61a37d08a6b0df306aa07f41e))
+* corrected test selector ([89e128b](https://github.com/TractorZoom/component-library/commit/89e128b717c7679caab659d2400cf19dd2efde97))
+
+
+
+
+
 ## [0.8.1](https://github.com/TractorZoom/component-library/compare/v0.8.0...v0.8.1) (2020-07-15)
 
 
