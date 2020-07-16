@@ -7,7 +7,7 @@
 | error      | no       | bool used to display helper text                                               |
 | format     | no       | string to format numbers (example `(###) ###-#####)`                           |
 | fullWidth  | no       | bool for Material UI text field width styling (defaults to `true`)             |
-| helperText | yes      | string for error label (only displayed on `error={true}`)                      |
+| helperText | no       | string for error label (only displayed on `error={true}`)                      |
 | label      | yes      | number or string for label of the input element                                |
 | margin     | no       | string for Material UI text field margin styling (defaults to `dense`)         |
 | onChange   | yes      | function to call when input is received                                        |
