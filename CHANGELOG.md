@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.3](https://github.com/TractorZoom/component-library/compare/v0.8.2...v0.8.3) (2020-07-16)
+
+
+### Bug Fixes
+
+* spread other props down, only show helper text on error ([53b8fb5](https://github.com/TractorZoom/component-library/commit/53b8fb59c68aee607f22281d0afa85b9ef027084))
+
+
+
+
+
 ## [0.8.2](https://github.com/TractorZoom/component-library/compare/v0.8.1...v0.8.2) (2020-07-16)
 
 
