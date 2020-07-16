@@ -9,7 +9,6 @@ storiesOf('Number Field', module).add(
         const [value, setValue] = useState('');
 
         const onChange = (e) => {
-            console.log('herrr', e.target.value);
             setValue(e.target.value);
         };
 
