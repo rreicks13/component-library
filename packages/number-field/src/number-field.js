@@ -7,7 +7,9 @@ const NumberField = (props) => {
     const {
         autoFocus,
         className,
+        displayHelperText,
         error,
+        errorText,
         format,
         fullWidth,
         helperText,
@@ -29,7 +31,7 @@ const NumberField = (props) => {
             error={error}
             format={format}
             fullWidth={fullWidth}
-            helperText={error ? helperText : ''}
+            helperText={helperText}
             id='formatted-numberformat-input'
             InputProps={{ 'data-testid': 'number-field-input' }}
             key='user-modal-phone-number-input'
@@ -49,6 +51,7 @@ NumberField.defaultProps = {
     error: false,
     format: '',
     fullWidth: true,
+    helperText: '',
     label: '',
     margin: 'dense',
     variant: 'outlined',
@@ -60,7 +63,7 @@ NumberField.propTypes = {
     error: PropTypes.bool,
     format: PropTypes.string,
     fullWidth: PropTypes.bool,
-    helperText: PropTypes.string.isRequired,
+    helperText: PropTypes.string,
     label: PropTypes.string,
     margin: PropTypes.string,
     name: PropTypes.string.isRequired,
