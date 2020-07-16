@@ -24,52 +24,7 @@ describe('Number Field', () => {
         expect(inputField.value).toEqual('(555) 555-5555');
     });
 
-    it('should show error text on error', () => {
-        //given
-        const mockData = {
-            errorText: chance.word(),
-        };
-
-        //when
-        render(
-            <NumberField
-                error={true}
-                errorText={mockData.errorText}
-                format='(###) ###-####'
-                label='Phone Number'
-                name='phoneNumber'
-                onChange={() => {}}
-                value=''
-            />
-        );
-
-        //then
-        expect(screen.getByText(mockData.errorText)).toBeVisible();
-    });
-
-    it('should not show error text if no error', () => {
-        //given
-        const mockData = {
-            errorText: chance.word(),
-        };
-
-        //when
-        render(
-            <NumberField
-                errorText={mockData.errorText}
-                format='(###) ###-####'
-                label='Phone Number'
-                name='phoneNumber'
-                onChange={() => {}}
-                value=''
-            />
-        );
-
-        //then
-        expect(screen.queryByText(mockData.errorText)).toBeNull();
-    });
-
-    it('should display helper text', () => {
+    it('should show helperText', () => {
         //given
         const mockData = {
             helperText: chance.word(),
@@ -78,9 +33,9 @@ describe('Number Field', () => {
         //when
         render(
             <NumberField
-                displayHelperText={true}
-                format='(###) ###-####'
+                error={false}
                 helperText={mockData.helperText}
+                format='(###) ###-####'
                 label='Phone Number'
                 name='phoneNumber'
                 onChange={() => {}}
@@ -92,9 +47,10 @@ describe('Number Field', () => {
         expect(screen.getByText(mockData.helperText)).toBeVisible();
     });
 
-    it('should display error text over helper text in case of error', () => {
+    it('should not show helperText', () => {
         //given
         const mockData = {
+            error: false,
             errorText: chance.word(),
             helperText: chance.word(),
         };
@@ -102,11 +58,9 @@ describe('Number Field', () => {
         //when
         render(
             <NumberField
-                displayHelperText={true}
-                error={true}
-                errorText={mockData.errorText}
+                error={mockData.error}
+                helperText={mockData.error ? mockData.errorText : mockData.helperText}
                 format='(###) ###-####'
-                helperText={mockData.helperText}
                 label='Phone Number'
                 name='phoneNumber'
                 onChange={() => {}}
@@ -115,7 +69,7 @@ describe('Number Field', () => {
         );
 
         //then
-        expect(screen.queryByText(mockData.helperText)).toBeNull();
-        expect(screen.getByText(mockData.errorText)).toBeVisible();
+        expect(screen.getByText(mockData.helperText)).toBeVisible();
+        expect(screen.queryByText(mockData.errorText)).toBeNull();
     });
 });
