@@ -14,6 +14,7 @@ storiesOf('Number Field', module).add(
 
         return (
             <NumberField
+                autoFocus={false}
                 error={false}
                 helperText='Ohhhh noooo'
                 format='(###) ###-####'

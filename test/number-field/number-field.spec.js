@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from '@testing-library/react';
+import { fireEvent, render, screen, logDOM } from '@testing-library/react';
 import NumberField from '../../packages/number-field/src';
 import React from 'react';
 
@@ -17,13 +17,14 @@ describe('Number Field', () => {
         );
 
         //when
-        fireEvent.change(screen.getByTestId('number-field-input'), { target: { value: '5555555555' } });
+        const inputField = screen.getByTestId('number-field-input').childNodes[0];
+        fireEvent.change(inputField, { target: { value: '5555555555' } });
 
         //then
-        expect(screen.getByTestId('number-field-input').value).toEqual('(555) 555-5555');
+        expect(inputField.value).toEqual('(555) 555-5555');
     });
 
-    xit('should show helper text on error', () => {
+    it('should show helper text on error', () => {
         //given
         const mockData = {
             errorText: chance.word(),

@@ -5,6 +5,7 @@
 | autoFocus  | no       | bool used to determine whether an input should be autofocused (defaults false) |
 | className  | no       | string class name to be applied to the input element                           |
 | error      | no       | bool used to display helper text                                               |
+| format     | no       | string to format numbers (example `(###) ###-#####)`                           |
 | fullWidth  | no       | bool for Material UI text field width styling (defaults to `true`)             |
 | helperText | yes      | string for error label                                                         |
 | label      | yes      | number or string for label of the input element                                |
