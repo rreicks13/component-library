@@ -7,7 +7,9 @@ const NumberField = (props) => {
     const {
         autoFocus,
         className,
+        displayHelperText,
         error,
+        errorText,
         format,
         fullWidth,
         helperText,
@@ -20,6 +22,17 @@ const NumberField = (props) => {
         ...other
     } = props;
 
+    const renderText = () => {
+        if (error) {
+            return errorText;
+        }
+
+        if (displayHelperText) {
+            return helperText;
+        }
+        return '';
+    };
+
     return (
         <NumberFormat
             {...other}
@@ -29,7 +42,7 @@ const NumberField = (props) => {
             error={error}
             format={format}
             fullWidth={fullWidth}
-            helperText={error ? helperText : ''}
+            helperText={renderText()}
             id='formatted-numberformat-input'
             InputProps={{ 'data-testid': 'number-field-input' }}
             key='user-modal-phone-number-input'
@@ -47,6 +60,8 @@ NumberField.defaultProps = {
     autoFocus: false,
     className: '',
     error: false,
+    errorText: '',
+    displayHelperText: false,
     format: '',
     fullWidth: true,
     helperText: '',
@@ -58,7 +73,9 @@ NumberField.defaultProps = {
 NumberField.propTypes = {
     autoFocus: PropTypes.bool,
     className: PropTypes.string,
+    displayHelperText: PropTypes.bool,
     error: PropTypes.bool,
+    errorText: PropTypes.string,
     format: PropTypes.string,
     fullWidth: PropTypes.bool,
     helperText: PropTypes.string,
