@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.4](https://github.com/TractorZoom/component-library/compare/v0.8.3...v0.8.4) (2020-07-16)
+
+
+### Bug Fixes
+
+* helper text no longer required ([571c5db](https://github.com/TractorZoom/component-library/commit/571c5db9e40bb0237082f0869009da48ba430e70))
+* uncomplicated error text logic ([1f3e49a](https://github.com/TractorZoom/component-library/commit/1f3e49a936422ce3553a52cc26e8a84a1da42254))
+
+
+
+
+
 ## [0.8.3](https://github.com/TractorZoom/component-library/compare/v0.8.2...v0.8.3) (2020-07-16)
 
 
