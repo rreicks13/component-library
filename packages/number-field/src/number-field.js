@@ -29,6 +29,7 @@ const NumberField = (props) => {
             fullWidth={fullWidth}
             helperText={helperText}
             id='formatted-numberformat-input'
+            InputProps={{ 'data-testid': 'number-field-input' }}
             key='user-modal-phone-number-input'
             label={label}
             margin={margin}
