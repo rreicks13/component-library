@@ -33,6 +33,7 @@ describe('Number Field', () => {
         //when
         render(
             <NumberField
+                error={true}
                 helperText={mockData.errorText}
                 format='(###) ###-####'
                 label='Phone Number'
@@ -44,5 +45,27 @@ describe('Number Field', () => {
 
         //then
         expect(screen.getByText(mockData.errorText)).toBeVisible();
+    });
+
+    it('should not show helper text if no error', () => {
+        //given
+        const mockData = {
+            errorText: chance.word(),
+        };
+
+        //when
+        render(
+            <NumberField
+                helperText={mockData.errorText}
+                format='(###) ###-####'
+                label='Phone Number'
+                name='phoneNumber'
+                onChange={() => {}}
+                value=''
+            />
+        );
+
+        //then
+        expect(screen.queryByText(mockData.errorText)).toBeNull();
     });
 });

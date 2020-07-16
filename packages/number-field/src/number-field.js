@@ -17,17 +17,19 @@ const NumberField = (props) => {
         onChange,
         value,
         variant,
+        ...other
     } = props;
 
     return (
         <NumberFormat
+            {...other}
             autoFocus={autoFocus}
             className={className}
             customInput={TextField}
             error={error}
             format={format}
             fullWidth={fullWidth}
-            helperText={helperText}
+            helperText={error ? helperText : ''}
             id='formatted-numberformat-input'
             InputProps={{ 'data-testid': 'number-field-input' }}
             key='user-modal-phone-number-input'
