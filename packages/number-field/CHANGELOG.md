@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/TractorZoom/component-library/compare/v0.8.6...v0.9.0) (2020-07-17)
+
+
+### Features
+
+* changed onChange to onValueChange ([6aa785c](https://github.com/TractorZoom/component-library/commit/6aa785cef846ecbe71e6941522ff26c71336b90f))
+
+
+
+
+
 ## [0.8.4](https://github.com/TractorZoom/component-library/compare/v0.8.3...v0.8.4) (2020-07-16)
 
 
