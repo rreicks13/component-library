@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.5](https://github.com/TractorZoom/component-library/compare/v0.8.4...v0.8.5) (2020-07-17)
+
+
+### Bug Fixes
+
+* removing hoc for mediaquery hook ([1b49857](https://github.com/TractorZoom/component-library/commit/1b4985756b1acf75dacb3dc9f55a7aa9dd43632b))
+
+
+
+
+
 # [0.8.0](https://github.com/TractorZoom/component-library/compare/v0.7.0...v0.8.0) (2020-07-15)
 
 **Note:** Version bump only for package @tractorzoom/basic-dialog
