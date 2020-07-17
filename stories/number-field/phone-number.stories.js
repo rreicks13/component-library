@@ -19,6 +19,7 @@ storiesOf('Number Field', module).add(
                 helperText='Ohhhh noooo'
                 format='(###) ###-####'
                 label='Phone Number'
+                name='number-field'
                 onChange={onChange}
                 value={value}
             />
