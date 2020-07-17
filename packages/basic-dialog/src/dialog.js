@@ -5,13 +5,12 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Typography } from '@material-ui/core';
-import { isWidthDown } from '@material-ui/core/withWidth';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 import useStyles from './styles';
-import withWidth from '@material-ui/core/withWidth';
 
 const BasicDialog = (props) => {
     const classes = useStyles();
-    const isMobile = isWidthDown('xs', props.width);
+    const isMobile = useMediaQuery('(max-width:600px)');
 
     return (
         <Dialog
@@ -43,4 +42,4 @@ BasicDialog.propTypes = {
     width: PropTypes.string.isRequired,
 };
 
-export default withWidth()(BasicDialog);
+export default BasicDialog;
