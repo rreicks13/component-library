@@ -22,6 +22,10 @@ const NumberField = (props) => {
         ...other
     } = props;
 
+    const handleChange = (e) => {
+        onChange({ target: { name: name, ...e } });
+    };
+
     return (
         <NumberFormat
             {...other}
@@ -38,7 +42,7 @@ const NumberField = (props) => {
             label={label}
             margin={margin}
             name={name}
-            onChange={onChange}
+            onValueChange={handleChange}
             value={value}
             variant={variant}
         />
