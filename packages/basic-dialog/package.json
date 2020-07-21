@@ -1,6 +1,6 @@
 {
     "name": "@tractorzoom/basic-dialog",
-    "version": "0.9.0",
+    "version": "0.10.0",
     "description": "Wrapped Material UI basic dialog with mobile optimization",
     "author": "@TractorZoom",
     "license": "MIT",
