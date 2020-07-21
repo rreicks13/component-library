@@ -18,7 +18,14 @@ const Select = (props) => {
             ListboxComponent={Listbox}
             options={props.options}
             renderInput={(params) => (
-                <TextField {...params} margin='dense' variant='outlined' label={props.label} fullWidth />
+                <TextField
+                    {...params}
+                    color={props.color}
+                    margin='dense'
+                    variant='outlined'
+                    label={props.label}
+                    fullWidth
+                />
             )}
             renderOption={(option) => <Typography noWrap>{option}</Typography>}
             value={props.selectedOption}
@@ -28,6 +35,7 @@ const Select = (props) => {
 };
 
 Select.propTypes = {
+    color: PropTypes.string,
     label: PropTypes.string.isRequired,
     options: PropTypes.array.isRequired,
     selectedOption: PropTypes.any,
