@@ -34,4 +34,22 @@ describe('text field', () => {
         // then
         expect(tree).toMatchSnapshot();
     });
+
+    it('should render when type is date', () => {
+        // given
+        const props = {
+            label: 'test',
+            margin: 'normal',
+            onChange: jest.fn(),
+            type: 'date',
+            variant: 'filled',
+        };
+
+        // when
+        const component = renderer.create(<TextField {...props} />);
+        const tree = component.toJSON();
+
+        // then
+        expect(tree).toMatchSnapshot();
+    });
 });

@@ -11,6 +11,7 @@ const TextField = (props) => {
     return (
         <MuiTextField
             className={clsx(classes.inputLabel, className)}
+            InputLabelProps={otherProps?.type === 'date' ? { shrink: true } : {}}
             InputProps={{
                 ...InputProps,
                 classes: { notchedOutline: classes.inputBorder },
