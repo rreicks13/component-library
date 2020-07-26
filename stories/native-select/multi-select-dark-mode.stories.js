@@ -1,9 +1,9 @@
 import NativeSelect from '../../packages/native-select/src';
 import React from 'react';
 import chance from '@tractorzoom/chance-the-wrapper';
+import { makeStyles } from '@material-ui/core/styles';
 import propsMarkdown from '../utilities/props/native-select.md';
 import { storiesOf } from '@storybook/react';
-import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
     container: {
