@@ -6,12 +6,13 @@ import { storiesOf } from '@storybook/react';
 
 const useStyles = makeStyles({
     container: {
+        backgroundColor: '#6c757d',
         padding: 20,
     },
 });
 
 storiesOf('Select', module).add(
-    'Select with 10000 options',
+    'Select with dark mode',
     () => {
         const classes = useStyles();
         const [value, setValue] = React.useState('');
@@ -34,7 +35,13 @@ storiesOf('Select', module).add(
 
         return (
             <div className={classes.container}>
-                <Select label='Virtualized Select' onChange={onChange} options={options} selectedOption={value} />
+                <Select
+                    darkMode
+                    label='Virtualized Select'
+                    onChange={onChange}
+                    options={options}
+                    selectedOption={value}
+                />
             </div>
         );
     },
