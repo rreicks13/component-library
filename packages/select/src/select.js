@@ -7,9 +7,9 @@ import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography';
 
 const Select = (props) => {
-    const classes = useStyles(props.darkMode)();
-    const textFieldClasses = useTextFieldStyles(props.darkMode)();
-    const { color, label, options, renderOption, selectedOption, ...otherProps } = props;
+    const { color, darkMode, label, options, renderOption, selectedOption, ...otherProps } = props;
+    const classes = useStyles(darkMode)();
+    const textFieldClasses = useTextFieldStyles(darkMode)();
 
     return (
         <Autocomplete

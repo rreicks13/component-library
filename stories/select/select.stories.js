@@ -11,7 +11,7 @@ const useStyles = makeStyles({
 });
 
 storiesOf('Select', module).add(
-    'Select with 10000 options',
+    'With 10000 options',
     () => {
         const classes = useStyles();
         const [value, setValue] = React.useState('');

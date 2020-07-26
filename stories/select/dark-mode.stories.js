@@ -12,7 +12,7 @@ const useStyles = makeStyles({
 });
 
 storiesOf('Select', module).add(
-    'Select with dark mode',
+    'With dark mode',
     () => {
         const classes = useStyles();
         const [value, setValue] = React.useState('');

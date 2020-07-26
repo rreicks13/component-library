@@ -1,13 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import TextField from '@material-ui/core/TextField';
+import clsx from 'clsx';
+import useStyles from './styles';
 
 const NativeSelect = (props) => {
-    const { margin, multiple, options, variant, ...otherProps } = props;
+    const { className, darkMode, InputProps, margin, multiple, options, variant, ...otherProps } = props;
+    const classes = useStyles(darkMode)();
 
     return (
         <TextField
+            className={clsx(classes.inputLabel, className)}
             InputLabelProps={multiple ? { shrink: true } : {}}
+            InputProps={{
+                ...InputProps,
+                classes: { notchedOutline: classes.inputBorder },
+                inputProps: { className: classes.inputValue },
+            }}
             margin={margin}
             select
             SelectProps={{
@@ -27,12 +36,18 @@ const NativeSelect = (props) => {
 };
 
 NativeSelect.defaultProps = {
+    className: '',
+    darkMode: false,
+    InputProps: {},
     margin: 'dense',
     multiple: false,
     variant: 'outlined',
 };
 
 NativeSelect.propTypes = {
+    className: PropTypes.string,
+    darkMode: PropTypes.bool,
+    InputProps: PropTypes.object,
     margin: PropTypes.string,
     multiple: PropTypes.bool,
     options: PropTypes.arrayOf(
