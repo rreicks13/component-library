@@ -36,4 +36,52 @@ describe('Select', () => {
         // then
         expect(tree).toMatchSnapshot();
     });
+
+    it('should render with required', () => {
+        // given
+        const options = [];
+
+        // when
+        const component = renderer.create(
+            <Select label='test' onChange={() => {}} required selectedOption={''} options={options} />
+        );
+        const tree = component.toJSON();
+
+        // then
+        expect(tree).toMatchSnapshot();
+    });
+
+    it('should render with error', () => {
+        // given
+        const options = [];
+
+        // when
+        const component = renderer.create(
+            <Select error label='test' onChange={() => {}} selectedOption={''} options={options} />
+        );
+        const tree = component.toJSON();
+
+        // then
+        expect(tree).toMatchSnapshot();
+    });
+
+    it('should render with helper text', () => {
+        // given
+        const options = [];
+
+        // when
+        const component = renderer.create(
+            <Select
+                helperText='some helper text'
+                label='test'
+                onChange={() => {}}
+                selectedOption={''}
+                options={options}
+            />
+        );
+        const tree = component.toJSON();
+
+        // then
+        expect(tree).toMatchSnapshot();
+    });
 });
