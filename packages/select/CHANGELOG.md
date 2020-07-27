@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://github.com/TractorZoom/component-library/compare/v0.11.0...v0.12.0) (2020-07-27)
+
+
+### Features
+
+* add ability to pass error and helper text to select ([d095ccc](https://github.com/TractorZoom/component-library/commit/d095ccc605348b6383fd5e04b4a09bf4a2cef5b3))
+* add ability to pass required prop to select component ([d313b01](https://github.com/TractorZoom/component-library/commit/d313b01f7ffc401257d188eda3a8cf788cba4c36))
+
+
+
+
+
 # [0.11.0](https://github.com/TractorZoom/component-library/compare/v0.10.0...v0.11.0) (2020-07-27)
 
 
