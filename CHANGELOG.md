@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/TractorZoom/component-library/compare/v0.10.0...v0.11.0) (2020-07-27)
+
+
+### Features
+
+* add dark mode for native select component ([b98b62f](https://github.com/TractorZoom/component-library/commit/b98b62f8dddd4db15d383a235b533e2fe84b0d3f))
+* add dark mode for select component ([cdbb213](https://github.com/TractorZoom/component-library/commit/cdbb2132d5d62c89aa3b22c6ee8d1f29f893f6b2))
+* add text field package that handles dark mode ([068619f](https://github.com/TractorZoom/component-library/commit/068619f57981e6b41924c514c1439a3a53055a68))
+* shrink text field label when type is date ([23cf87b](https://github.com/TractorZoom/component-library/commit/23cf87b0d3796767756e2870aacf5af771c9372b))
+
+
+
+
+
 # [0.10.0](https://github.com/TractorZoom/component-library/compare/v0.9.1...v0.10.0) (2020-07-21)
 
 
