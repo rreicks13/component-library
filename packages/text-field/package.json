@@ -1,7 +1,7 @@
 {
-    "name": "@tractorzoom/native-select",
+    "name": "@tractorzoom/text-field",
     "version": "0.10.0",
-    "description": "Native select component using Material UI's TextField",
+    "description": "Wrapper for Material UI's TextField",
     "author": "@TractorZoom",
     "license": "MIT",
     "main": "lib/index.js",
@@ -12,15 +12,14 @@
         "type": "git",
         "url": "https://github.com/TractorZoom/component-library.git"
     },
-    "homepage": "https://github.com/TractorZoom/component-library/packages/native-select/README.md",
+    "homepage": "https://github.com/TractorZoom/component-library/packages/text-field/README.md",
     "bugs": {
         "url": "https://github.com/TractorZoom/component-library/issues"
     },
     "keywords": [
         "material-ui",
-        "select",
-        "native select",
-        "mobile select"
+        "text field",
+        "input"
     ],
     "publishConfig": {
         "access": "public"

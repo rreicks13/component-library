@@ -1,17 +1,18 @@
-import Select from '../../packages/select/src';
 import React from 'react';
-import propsMarkdown from '../utilities/props/select.md';
+import TextField from '../../packages/text-field/src';
 import { makeStyles } from '@material-ui/core/styles';
+import propsMarkdown from '../utilities/props/text-field.md';
 import { storiesOf } from '@storybook/react';
 
 const useStyles = makeStyles({
     container: {
+        backgroundColor: '#6c757d',
         padding: 20,
     },
 });
 
-storiesOf('Select', module).add(
-    'With 10000 options',
+storiesOf('Text Field', module).add(
+    'With dark mode and date',
     () => {
         const classes = useStyles();
         const [value, setValue] = React.useState('');
@@ -24,17 +25,13 @@ storiesOf('Select', module).add(
             i++;
         }
 
-        const onChange = (event, value) => {
-            if (value) {
-                setValue(value);
-            } else {
-                setValue('');
-            }
+        const onChange = (event) => {
+            setValue(event.target.value);
         };
 
         return (
             <div className={classes.container}>
-                <Select label='Virtualized Select' onChange={onChange} options={options} selectedOption={value} />
+                <TextField darkMode label='Text Field' onChange={onChange} type='date' value={value} />
             </div>
         );
     },

@@ -1,43 +1,63 @@
+import useStyles, { useTextFieldStyles } from './styles';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import Listbox from './listbox';
 import PropTypes from 'prop-types';
 import React from 'react';
 import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography';
-import useStyles from './styles';
 
 const Select = (props) => {
-    const classes = useStyles();
+    const { color, darkMode, label, options, renderOption, selectedOption, ...otherProps } = props;
+    const classes = useStyles(darkMode)();
+    const textFieldClasses = useTextFieldStyles(darkMode)();
 
     return (
         <Autocomplete
+            autoHighlight
+            autoSelect
             id='select'
             style={{ width: '100%' }}
             disableListWrap
             classes={classes}
             ListboxComponent={Listbox}
-            options={props.options}
+            options={options}
             renderInput={(params) => (
                 <TextField
                     {...params}
-                    color={props.color}
-                    margin='dense'
+                    className={textFieldClasses.input}
+                    color={color}
+                    InputProps={{
+                        ...params.InputProps,
+                        classes: {
+                            ...params.InputProps.classes,
+                            notchedOutline: textFieldClasses.notchedOutline,
+                        },
+                    }}
+                    size='small'
                     variant='outlined'
-                    label={props.label}
+                    label={label}
                     fullWidth
                 />
             )}
-            renderOption={(option) => <Typography noWrap>{option}</Typography>}
-            value={props.selectedOption}
-            {...props}
+            renderOption={renderOption}
+            value={selectedOption}
+            {...otherProps}
         />
     );
 };
 
+Select.defaultProps = {
+    color: null,
+    darkMode: false,
+    renderOption: (option) => <Typography noWrap>{option}</Typography>,
+};
+
 Select.propTypes = {
     color: PropTypes.string,
+    darkMode: PropTypes.bool,
     label: PropTypes.string.isRequired,
     options: PropTypes.array.isRequired,
+    renderOption: PropTypes.func,
     selectedOption: PropTypes.any,
 };
 

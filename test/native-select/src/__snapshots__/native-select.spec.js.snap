@@ -2,7 +2,7 @@
 
 exports[`native select should render multi select 1`] = `
 <div
-  className="MuiFormControl-root MuiTextField-root MuiFormControl-marginDense"
+  className="MuiFormControl-root MuiTextField-root makeStyles-inputLabel-12 MuiFormControl-marginDense"
 >
   <div
     className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-marginDense MuiOutlinedInput-marginDense"
@@ -11,7 +11,7 @@ exports[`native select should render multi select 1`] = `
     <select
       aria-invalid={false}
       autoFocus={false}
-      className="MuiSelect-root MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
+      className="MuiSelect-root MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input makeStyles-inputValue-13 MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
       disabled={false}
       multiple={true}
       onAnimationStart={[Function]}
@@ -29,7 +29,7 @@ exports[`native select should render multi select 1`] = `
     </select>
     <fieldset
       aria-hidden={true}
-      className="PrivateNotchedOutline-root-1 MuiOutlinedInput-notchedOutline"
+      className="PrivateNotchedOutline-root-4 MuiOutlinedInput-notchedOutline makeStyles-inputBorder-11"
       style={
         Object {
           "paddingLeft": 8,
@@ -37,7 +37,7 @@ exports[`native select should render multi select 1`] = `
       }
     >
       <legend
-        className="PrivateNotchedOutline-legend-2"
+        className="PrivateNotchedOutline-legend-5"
         style={
           Object {
             "width": 0.01,
@@ -59,7 +59,7 @@ exports[`native select should render multi select 1`] = `
 
 exports[`native select should render with custom margin 1`] = `
 <div
-  className="MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal"
+  className="MuiFormControl-root MuiTextField-root makeStyles-inputLabel-9 MuiFormControl-marginNormal"
 >
   <div
     className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl"
@@ -68,7 +68,7 @@ exports[`native select should render with custom margin 1`] = `
     <select
       aria-invalid={false}
       autoFocus={false}
-      className="MuiSelect-root MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input"
+      className="MuiSelect-root MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input makeStyles-inputValue-10"
       disabled={false}
       multiple={false}
       onAnimationStart={[Function]}
@@ -96,7 +96,7 @@ exports[`native select should render with custom margin 1`] = `
     </svg>
     <fieldset
       aria-hidden={true}
-      className="PrivateNotchedOutline-root-1 MuiOutlinedInput-notchedOutline"
+      className="PrivateNotchedOutline-root-4 MuiOutlinedInput-notchedOutline makeStyles-inputBorder-8"
       style={
         Object {
           "paddingLeft": 8,
@@ -104,7 +104,7 @@ exports[`native select should render with custom margin 1`] = `
       }
     >
       <legend
-        className="PrivateNotchedOutline-legend-2"
+        className="PrivateNotchedOutline-legend-5"
         style={
           Object {
             "width": 0.01,
@@ -126,7 +126,7 @@ exports[`native select should render with custom margin 1`] = `
 
 exports[`native select should render with custom variant 1`] = `
 <div
-  className="MuiFormControl-root MuiTextField-root MuiFormControl-marginDense"
+  className="MuiFormControl-root MuiTextField-root makeStyles-inputLabel-15 MuiFormControl-marginDense"
 >
   <div
     className="MuiInputBase-root MuiFilledInput-root MuiFilledInput-underline MuiInputBase-formControl MuiInputBase-marginDense MuiFilledInput-marginDense"
@@ -135,7 +135,7 @@ exports[`native select should render with custom variant 1`] = `
     <select
       aria-invalid={false}
       autoFocus={false}
-      className="MuiSelect-root MuiSelect-select MuiSelect-filled MuiInputBase-input MuiFilledInput-input MuiInputBase-inputMarginDense MuiFilledInput-inputMarginDense"
+      className="MuiSelect-root MuiSelect-select MuiSelect-filled MuiInputBase-input MuiFilledInput-input makeStyles-inputValue-16 MuiInputBase-inputMarginDense MuiFilledInput-inputMarginDense"
       disabled={false}
       multiple={false}
       onAnimationStart={[Function]}
@@ -167,7 +167,7 @@ exports[`native select should render with custom variant 1`] = `
 
 exports[`native select should render with required props 1`] = `
 <div
-  className="MuiFormControl-root MuiTextField-root MuiFormControl-marginDense"
+  className="MuiFormControl-root MuiTextField-root makeStyles-inputLabel-2 MuiFormControl-marginDense"
 >
   <div
     className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-marginDense MuiOutlinedInput-marginDense"
@@ -176,7 +176,7 @@ exports[`native select should render with required props 1`] = `
     <select
       aria-invalid={false}
       autoFocus={false}
-      className="MuiSelect-root MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
+      className="MuiSelect-root MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input makeStyles-inputValue-3 MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
       disabled={false}
       multiple={false}
       onAnimationStart={[Function]}
@@ -204,7 +204,7 @@ exports[`native select should render with required props 1`] = `
     </svg>
     <fieldset
       aria-hidden={true}
-      className="PrivateNotchedOutline-root-1 MuiOutlinedInput-notchedOutline"
+      className="PrivateNotchedOutline-root-4 MuiOutlinedInput-notchedOutline makeStyles-inputBorder-1"
       style={
         Object {
           "paddingLeft": 8,
@@ -212,7 +212,7 @@ exports[`native select should render with required props 1`] = `
       }
     >
       <legend
-        className="PrivateNotchedOutline-legend-2"
+        className="PrivateNotchedOutline-legend-5"
         style={
           Object {
             "width": 0.01,
