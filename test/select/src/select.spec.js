@@ -36,4 +36,18 @@ describe('Select', () => {
         // then
         expect(tree).toMatchSnapshot();
     });
+
+    it('should render with required', () => {
+        // given
+        const options = [];
+
+        // when
+        const component = renderer.create(
+            <Select label='test' onChange={() => {}} required selectedOption={''} options={options} />
+        );
+        const tree = component.toJSON();
+
+        // then
+        expect(tree).toMatchSnapshot();
+    });
 });
