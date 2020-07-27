@@ -7,7 +7,18 @@ import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography';
 
 const Select = (props) => {
-    const { color, darkMode, label, options, renderOption, required, selectedOption, ...otherProps } = props;
+    const {
+        color,
+        darkMode,
+        error,
+        helperText,
+        label,
+        options,
+        renderOption,
+        required,
+        selectedOption,
+        ...otherProps
+    } = props;
     const classes = useStyles(darkMode)();
     const textFieldClasses = useTextFieldStyles(darkMode)();
 
@@ -26,6 +37,8 @@ const Select = (props) => {
                     {...params}
                     className={textFieldClasses.input}
                     color={color}
+                    error={error}
+                    helperText={helperText}
                     InputProps={{
                         ...params.InputProps,
                         classes: {
@@ -50,6 +63,8 @@ const Select = (props) => {
 Select.defaultProps = {
     color: null,
     darkMode: false,
+    error: false,
+    helperText: '',
     renderOption: (option) => <Typography noWrap>{option}</Typography>,
     required: false,
 };
@@ -57,6 +72,8 @@ Select.defaultProps = {
 Select.propTypes = {
     color: PropTypes.string,
     darkMode: PropTypes.bool,
+    error: PropTypes.bool,
+    helperText: PropTypes.string,
     label: PropTypes.string.isRequired,
     options: PropTypes.array.isRequired,
     renderOption: PropTypes.func,
