@@ -1,5 +1,145 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Side Panel should render the side panel empty 1`] = `null`;
+exports[`Side Panel should render the side panel empty 1`] = `
+<div
+  className="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1"
+>
+  <div
+    className="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-4 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft MuiPaper-elevation0"
+    style={
+      Object {
+        "visibility": undefined,
+      }
+    }
+  >
+    <div
+      className="makeStyles-drawerHeader-2"
+    >
+      <button
+        className="MuiButtonBase-root MuiIconButton-root"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root"
+            focusable="false"
+            style={
+              Object {
+                "color": "white",
+              }
+            }
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+            />
+          </svg>
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+    <hr
+      className="MuiDivider-root"
+      style={
+        Object {
+          "backgroundColor": "white",
+        }
+      }
+    />
+  </div>
+</div>
+`;
 
-exports[`Side Panel should render the side panel with a child 1`] = `null`;
+exports[`Side Panel should render the side panel with a child 1`] = `
+<div
+  className="MuiDrawer-root MuiDrawer-docked makeStyles-drawer-1"
+>
+  <div
+    className="MuiPaper-root MuiDrawer-paper makeStyles-drawerPaper-4 MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft MuiPaper-elevation0"
+    style={
+      Object {
+        "visibility": undefined,
+      }
+    }
+  >
+    <div
+      className="makeStyles-drawerHeader-2"
+    >
+      <button
+        className="MuiButtonBase-root MuiIconButton-root"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiIconButton-label"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root"
+            focusable="false"
+            style={
+              Object {
+                "color": "white",
+              }
+            }
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+            />
+          </svg>
+        </span>
+        <span
+          className="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+    <hr
+      className="MuiDivider-root"
+      style={
+        Object {
+          "backgroundColor": "white",
+        }
+      }
+    />
+    <div
+      isOpen={true}
+      setOpen={[Function]}
+    >
+      Child
+    </div>
+  </div>
+</div>
+`;
