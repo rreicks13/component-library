@@ -16,8 +16,6 @@ const SidePanel = (props) => {
         setOpen(!isMobile);
     }, []);
 
-    console.log('children: ', props.children);
-
     return (
         <>
             <Drawer

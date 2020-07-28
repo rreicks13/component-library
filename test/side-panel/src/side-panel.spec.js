@@ -1,6 +1,6 @@
+import { fireEvent, render, screen } from '@testing-library/react';
 import SidePanel from '../../../packages/side-panel/src';
 import React from 'react';
-import renderer from 'react-test-renderer';
 
 describe('Side Panel', () => {
     it('should render the side panel empty', () => {
@@ -13,11 +13,10 @@ describe('Side Panel', () => {
         };
 
         // when
-        const component = renderer.create(<SidePanel {...props} />);
-        let tree = component.toJSON();
+        render(<SidePanel {...props} />);
 
         // then
-        expect(tree).toMatchSnapshot();
+        expect(screen).toMatchSnapshot();
     });
 
     it('should render the side panel with a child', () => {
@@ -30,10 +29,9 @@ describe('Side Panel', () => {
         };
 
         //when
-        const component = renderer.create(<SidePanel {...props} />);
-        let tree = component.toJSON();
+        render(<SidePanel {...props} />);
 
         //then
-        expect(tree).toMatchSnapshot();
+        expect(screen).toMatchSnapshot();
     });
 });
