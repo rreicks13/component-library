@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import SidePanel from '../../../packages/side-panel/src';
 import React from 'react';
 
