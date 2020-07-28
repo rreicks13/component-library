@@ -1,31 +1,37 @@
+import { render, screen } from '@testing-library/react';
 import SidePanel from '../../../packages/side-panel/src';
 import React from 'react';
-import renderer from 'react-test-renderer';
 
 describe('Side Panel', () => {
     it('should render the side panel empty', () => {
         // given
+        const props = {
+            children: [],
+            open: true,
+            width: 'md',
+            setOpen: () => {},
+        };
 
         // when
-        const component = renderer.create(<SidePanel />);
-        let tree = component.toJSON();
+        render(<SidePanel {...props} />);
 
         // then
-        expect(tree).toMatchSnapshot();
+        expect(screen).toMatchSnapshot();
     });
 
     it('should render the side panel with a child', () => {
         //given
+        const props = {
+            children: [<div>Child</div>],
+            open: true,
+            width: 'md',
+            setOpen: () => {},
+        };
 
         //when
-        const component = renderer.create(
-            <SidePanel>
-                <div>Child</div>
-            </SidePanel>
-        );
-        let tree = component.toJSON();
+        render(<SidePanel {...props} />);
 
         //then
-        expect(tree).toMatchSnapshot();
+        expect(screen).toMatchSnapshot();
     });
 });

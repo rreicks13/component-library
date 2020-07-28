@@ -16,9 +16,13 @@ const useStyles = makeStyles((theme) => ({
     },
     drawerHeader: {
         alignItems: 'center',
+        background: '#6c757d',
         display: 'flex',
         padding: theme.spacing(0, 1),
+        position: 'sticky',
         justifyContent: 'flex-end',
+        top: 0,
+        zIndex: 999,
     },
     drawerMobile: {
         width: '100vw',
@@ -28,6 +32,12 @@ const useStyles = makeStyles((theme) => ({
     drawerPaperMobile: {
         ...paper,
         width: '100vw',
+    },
+    headerDivider: {
+        backgroundColor: 'white',
+        position: 'sticky',
+        top: 48,
+        zIndex: 999,
     },
     icon: {
         color: 'white',

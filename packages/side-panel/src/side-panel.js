@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
 import IconButton from '@material-ui/core/IconButton';
@@ -9,18 +8,13 @@ import useStyles from './styles';
 import withWidth from '@material-ui/core/withWidth';
 
 const SidePanel = (props) => {
+    const { open, setOpen } = props;
     const isMobile = props.width === 'xs' || props.width === 'sm';
-
     const classes = useStyles();
-    const [open, setOpen] = useState(!isMobile);
 
-    const getToggleOpenButtonMargin = () => {
-        if (open) {
-            return 0;
-        } else {
-            return isMobile ? `-${window.innerWidth}px` : `-300px`;
-        }
-    };
+    useEffect(() => {
+        setOpen(!isMobile);
+    }, []);
 
     return (
         <>
@@ -38,7 +32,7 @@ const SidePanel = (props) => {
                         <ChevronLeftIcon style={{ color: 'white' }} />
                     </IconButton>
                 </div>
-                <Divider style={{ backgroundColor: 'white' }} />
+                <Divider className={classes.headerDivider} />
                 {props.children.map((child) => {
                     let newChild = { ...child };
 
@@ -50,21 +44,14 @@ const SidePanel = (props) => {
                     return newChild;
                 })}
             </Drawer>
-            {!open && (
-                <div
-                    className={classes.toggleOpenButton}
-                    style={{ marginLeft: getToggleOpenButtonMargin() }}
-                    onClick={() => setOpen(true)}
-                >
-                    <ChevronRightIcon className={classes.icon} />
-                </div>
-            )}
         </>
     );
 };
 
 SidePanel.propTypes = {
     children: PropTypes.any,
+    open: PropTypes.bool.isRequired,
+    setOpen: PropTypes.func.isRequired,
 };
 
 export default withWidth()(SidePanel);
