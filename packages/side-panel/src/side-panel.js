@@ -34,7 +34,7 @@ const SidePanel = (props) => {
                         <ChevronLeftIcon style={{ color: 'white' }} />
                     </IconButton>
                 </div>
-                <Divider style={{ backgroundColor: 'white' }} />
+                <Divider className={classes.headerDivider} />
                 {props.children.map((child) => {
                     let newChild = { ...child };
 

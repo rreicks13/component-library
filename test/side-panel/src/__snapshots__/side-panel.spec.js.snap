@@ -58,12 +58,7 @@ exports[`Side Panel should render the side panel empty 1`] = `
       </button>
     </div>
     <hr
-      className="MuiDivider-root"
-      style={
-        Object {
-          "backgroundColor": "white",
-        }
-      }
+      className="MuiDivider-root makeStyles-headerDivider-6"
     />
   </div>
 </div>
@@ -127,12 +122,7 @@ exports[`Side Panel should render the side panel with a child 1`] = `
       </button>
     </div>
     <hr
-      className="MuiDivider-root"
-      style={
-        Object {
-          "backgroundColor": "white",
-        }
-      }
+      className="MuiDivider-root makeStyles-headerDivider-6"
     />
     <div
       isOpen={true}
