@@ -1,0 +1,39 @@
+{
+    "name": "@tractorzoom/usage-meter",
+    "version": "0.13.0",
+    "description": "Usage Meter with label",
+    "author": "@TractorZoom",
+    "license": "MIT",
+    "main": "lib/index.js",
+    "engines": {
+        "node": "12.x"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/TractorZoom/component-library.git"
+    },
+    "homepage": "https://github.com/TractorZoom/component-library/packages/usage-meter/README.md",
+    "bugs": {
+        "url": "https://github.com/TractorZoom/component-library/issues"
+    },
+    "keywords": [
+        "material-ui",
+        "usage meter",
+        "circular progress",
+        "static circle progress",
+        "progress with label"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "build": "../../node_modules/.bin/babel src --out-dir lib --copy-files",
+        "prepublish": "npm run build"
+    },
+    "peerDependencies": {
+        "@material-ui/core": "^4.10.2"
+    },
+    "dependencies": {
+        "clsx": "^1.1.1"
+    }
+}
