@@ -10,6 +10,9 @@ const paper = {
 };
 
 const useStyles = makeStyles((theme) => ({
+    closeButton: {
+        marginLeft: 'auto',
+    },
     drawer: {
         width: paper.width,
         flexShrink: 0,
