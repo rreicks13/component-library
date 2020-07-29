@@ -29,7 +29,7 @@ const SidePanel = (props) => {
             >
                 <div className={classes.drawerHeader}>
                     {Boolean(props.headerComponent) && props.headerComponent}
-                    <IconButton onClick={() => setOpen(false)}>
+                    <IconButton className={classes.closeButton} onClick={() => setOpen(false)}>
                         <ChevronLeftIcon style={{ color: 'white' }} />
                     </IconButton>
                 </div>

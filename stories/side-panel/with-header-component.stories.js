@@ -11,7 +11,6 @@ const useStyles = makeStyles({
     },
     headerComponent: {
         color: 'white',
-        marginRight: 'auto',
     },
 });
 
