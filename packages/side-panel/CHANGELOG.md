@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://github.com/TractorZoom/component-library/compare/v0.12.1...v0.13.0) (2020-07-29)
+
+
+### Features
+
+* add optional header component to be rendered in side-panel ([9e2de30](https://github.com/TractorZoom/component-library/commit/9e2de307a11a713cec3cbedc3b728fa1d1f25c78))
+
+
+
+
+
 ## [0.12.1](https://github.com/TractorZoom/component-library/compare/v0.12.0...v0.12.1) (2020-07-28)
 
 **Note:** Version bump only for package @tractorzoom/side-panel
