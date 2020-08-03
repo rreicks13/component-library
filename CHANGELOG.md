@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.14.1](https://github.com/TractorZoom/component-library/compare/v0.14.0...v0.14.1) (2020-08-03)
+
+
+### Bug Fixes
+
+* add flex-shrink: 0 to fix UI issue in safari ([#39](https://github.com/TractorZoom/component-library/issues/39)) ([946b509](https://github.com/TractorZoom/component-library/commit/946b509e39688fd4478cf262f311eadc3162931f))
+
+
+
+
+
 # [0.14.0](https://github.com/TractorZoom/component-library/compare/v0.13.0...v0.14.0) (2020-07-29)
 
 
