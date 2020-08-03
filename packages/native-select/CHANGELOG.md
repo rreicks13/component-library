@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.15.0](https://github.com/TractorZoom/component-library/compare/v0.14.1...v0.15.0) (2020-08-03)
+
+**Note:** Version bump only for package @tractorzoom/native-select
+
+
+
+
+
 # [0.14.0](https://github.com/TractorZoom/component-library/compare/v0.13.0...v0.14.0) (2020-07-29)
 
 **Note:** Version bump only for package @tractorzoom/native-select
