@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import Button from '@material-ui/core/Button';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
@@ -12,14 +12,19 @@ import PropTypes from 'prop-types';
 
 const ButtonDropdown = (props) => {
     const [open, setOpen] = useState(false);
+    const [selectedIndex, setSelectedIndex] = useState(props.options.indexOf(props.selectedOption));
     const anchorRef = useRef(null);
 
+    useEffect(() => {
+        setSelectedIndex(props.options.indexOf(props.selectedOption));
+    }, [props.selectedOption]);
+
     const handleClick = () => {
-        props.onChange(props.selectedOption);
+        props.onChange(props.options[selectedIndex]);
     };
 
     const handleMenuItemClick = (event, index) => {
-        props.onChange(props.options[index]);
+        setSelectedIndex(index);
         setOpen(false);
     };
 
@@ -39,7 +44,7 @@ const ButtonDropdown = (props) => {
         <div className={props.className}>
             <ButtonGroup variant='contained' color={props.color} ref={anchorRef} aria-label='split button'>
                 <Button onClick={handleClick}>
-                    {`${props.label ? `${props.label}: ` : ''}${props.selectedOption}`}
+                    {`${props.label ? `${props.label} ` : ''}${props.options[selectedIndex] || ''}`}
                 </Button>
                 <Button
                     aria-controls={open ? 'split-button-menu' : undefined}
@@ -95,7 +100,7 @@ ButtonDropdown.propTypes = {
     label: PropTypes.string,
     onChange: PropTypes.func.isRequired,
     options: PropTypes.arrayOf(PropTypes.string).isRequired,
-    selectedOption: PropTypes.string.isRequired,
+    selectedOption: PropTypes.string,
 };
 
 export default ButtonDropdown;

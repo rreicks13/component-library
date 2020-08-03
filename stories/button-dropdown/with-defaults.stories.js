@@ -11,12 +11,13 @@ const useStyles = makeStyles({
     },
 });
 
+const options = chance.n(chance.name, chance.d20());
+
 storiesOf('Button Dropdown', module).add(
     'With defaults',
     () => {
         const classes = useStyles();
         const [value, setValue] = React.useState('');
-        const options = chance.n(chance.name, chance.d20());
 
         return (
             <div className={classes.container}>

@@ -14,20 +14,14 @@ const useStyles = makeStyles({
 const options = chance.n(chance.name, chance.d20());
 
 storiesOf('Button Dropdown', module).add(
-    'With label',
+    'With initial selection',
     () => {
         const classes = useStyles();
-        const [value, setValue] = React.useState('');
+        const [value, setValue] = React.useState(options[0]);
 
         return (
             <div className={classes.container}>
-                <ButtonDropdown
-                    color='secondary'
-                    label='Sort By'
-                    onChange={setValue}
-                    options={options}
-                    selectedOption={value}
-                />
+                <ButtonDropdown label='Sort By' onChange={setValue} options={options} selectedOption={value} />
             </div>
         );
     },
