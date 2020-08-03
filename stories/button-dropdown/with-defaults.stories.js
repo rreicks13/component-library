@@ -17,11 +17,13 @@ storiesOf('Button Dropdown', module).add(
     'With defaults',
     () => {
         const classes = useStyles();
-        const [value, setValue] = React.useState('');
+        const onChange = (selectedOption) => {
+            console.log(`on chance fired with ${selectedOption}`);
+        };
 
         return (
             <div className={classes.container}>
-                <ButtonDropdown onChange={setValue} options={options} selectedOption={value} />
+                <ButtonDropdown onChange={onChange} options={options} />
             </div>
         );
     },
