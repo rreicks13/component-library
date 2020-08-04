@@ -64,6 +64,7 @@ const ButtonDropdown = (props) => {
                         {...TransitionProps}
                         style={{
                             transformOrigin: placement === 'bottom' ? 'center top' : 'center bottom',
+                            zIndex: 1,
                         }}
                     >
                         <Paper>
