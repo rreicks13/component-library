@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.15.3](https://github.com/TractorZoom/component-library/compare/v0.15.2...v0.15.3) (2020-08-04)
+
+
+### Bug Fixes
+
+* move z-index for button dropdown to popper ([c9f5668](https://github.com/TractorZoom/component-library/commit/c9f56684965012f283c05f31b66d9a68529afd28))
+
+
+
+
+
 ## [0.15.2](https://github.com/TractorZoom/component-library/compare/v0.15.1...v0.15.2) (2020-08-04)
 
 
