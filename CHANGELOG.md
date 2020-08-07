@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.16.0](https://github.com/TractorZoom/component-library/compare/v0.15.3...v0.16.0) (2020-08-07)
+
+
+### Features
+
+* add disabled prop from button dropdown ([dcbca21](https://github.com/TractorZoom/component-library/commit/dcbca2162e1df023536c6c9145b7fbede814d4b6))
+
+
+
+
+
 ## [0.15.3](https://github.com/TractorZoom/component-library/compare/v0.15.2...v0.15.3) (2020-08-04)
 
 
