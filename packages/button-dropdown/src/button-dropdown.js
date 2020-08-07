@@ -42,7 +42,13 @@ const ButtonDropdown = (props) => {
 
     return (
         <div className={props.className}>
-            <ButtonGroup variant='contained' color={props.color} ref={anchorRef} aria-label='split button'>
+            <ButtonGroup
+                disabled={props.disabled}
+                variant='contained'
+                color={props.color}
+                ref={anchorRef}
+                aria-label='split button'
+            >
                 <Button onClick={handleClick}>
                     {`${props.label ? `${props.label} ` : ''}${props.options[selectedIndex] || ''}`}
                 </Button>
@@ -98,12 +104,14 @@ const ButtonDropdown = (props) => {
 ButtonDropdown.defaultProps = {
     className: '',
     color: 'primary',
+    disabled: false,
     label: '',
 };
 
 ButtonDropdown.propTypes = {
     className: PropTypes.string,
     color: PropTypes.string,
+    disabled: PropTypes.bool,
     label: PropTypes.string,
     onChange: PropTypes.func.isRequired,
     options: PropTypes.arrayOf(PropTypes.string).isRequired,
