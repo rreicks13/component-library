@@ -26,6 +26,10 @@ const ButtonDropdown = (props) => {
     const handleMenuItemClick = (event, index) => {
         setSelectedIndex(index);
         setOpen(false);
+
+        if (props.onSelectionChange) {
+            props.onSelectionChange(props.options[selectedIndex]);
+        }
     };
 
     const handleToggle = () => {
@@ -114,6 +118,7 @@ ButtonDropdown.propTypes = {
     disabled: PropTypes.bool,
     label: PropTypes.string,
     onChange: PropTypes.func.isRequired,
+    onSelectionChange: PropTypes.func,
     options: PropTypes.arrayOf(PropTypes.string).isRequired,
     selectedOption: PropTypes.string,
 };
