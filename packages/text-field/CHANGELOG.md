@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.19.0](https://github.com/TractorZoom/component-library/compare/v0.18.1...v0.19.0) (2020-08-11)
+
+
+### Features
+
+* pass step to input props for text field ([649ea6e](https://github.com/TractorZoom/component-library/commit/649ea6eeb447e2e9e1a69666224e2c839d938b36))
+
+
+
+
+
 # [0.18.0](https://github.com/TractorZoom/component-library/compare/v0.17.0...v0.18.0) (2020-08-11)
 
 **Note:** Version bump only for package @tractorzoom/text-field
