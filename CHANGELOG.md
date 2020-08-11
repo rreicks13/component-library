@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.18.1](https://github.com/TractorZoom/component-library/compare/v0.18.0...v0.18.1) (2020-08-11)
+
+
+### Bug Fixes
+
+* use index on selection change callback ([fb10239](https://github.com/TractorZoom/component-library/commit/fb10239d385c70238226129a2f2aaf69910366ac))
+
+
+
+
+
 # [0.18.0](https://github.com/TractorZoom/component-library/compare/v0.17.0...v0.18.0) (2020-08-11)
 
 
