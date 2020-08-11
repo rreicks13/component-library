@@ -28,7 +28,7 @@ const ButtonDropdown = (props) => {
         setOpen(false);
 
         if (props.onSelectionChange) {
-            props.onSelectionChange(props.options[selectedIndex]);
+            props.onSelectionChange(props.options[index]);
         }
     };
 
