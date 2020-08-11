@@ -30,6 +30,92 @@ exports[`text field should render when type is date 1`] = `
 </div>
 `;
 
+exports[`text field should render when type is number 1`] = `
+<div
+  className="MuiFormControl-root MuiTextField-root makeStyles-inputLabel-15 MuiFormControl-marginDense"
+>
+  <label
+    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense MuiInputLabel-outlined"
+    data-shrink={false}
+  >
+    test
+  </label>
+  <div
+    className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-marginDense MuiOutlinedInput-marginDense"
+    onClick={[Function]}
+  >
+    <input
+      aria-invalid={false}
+      autoFocus={false}
+      className="MuiInputBase-input MuiOutlinedInput-input makeStyles-inputValue-16 MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
+      disabled={false}
+      onAnimationStart={[Function]}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={false}
+      step={1}
+      type="number"
+    />
+    <fieldset
+      aria-hidden={true}
+      className="PrivateNotchedOutline-root-4 MuiOutlinedInput-notchedOutline makeStyles-inputBorder-14"
+    >
+      <legend
+        className="PrivateNotchedOutline-legendLabelled-6"
+      >
+        <span>
+          test
+        </span>
+      </legend>
+    </fieldset>
+  </div>
+</div>
+`;
+
+exports[`text field should render when type is number with custom step 1`] = `
+<div
+  className="MuiFormControl-root MuiTextField-root makeStyles-inputLabel-18 MuiFormControl-marginDense"
+>
+  <label
+    className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense MuiInputLabel-outlined"
+    data-shrink={false}
+  >
+    test
+  </label>
+  <div
+    className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-marginDense MuiOutlinedInput-marginDense"
+    onClick={[Function]}
+  >
+    <input
+      aria-invalid={false}
+      autoFocus={false}
+      className="MuiInputBase-input MuiOutlinedInput-input makeStyles-inputValue-19 MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
+      disabled={false}
+      onAnimationStart={[Function]}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      required={false}
+      step={1000}
+      type="number"
+    />
+    <fieldset
+      aria-hidden={true}
+      className="PrivateNotchedOutline-root-4 MuiOutlinedInput-notchedOutline makeStyles-inputBorder-17"
+    >
+      <legend
+        className="PrivateNotchedOutline-legendLabelled-6"
+      >
+        <span>
+          test
+        </span>
+      </legend>
+    </fieldset>
+  </div>
+</div>
+`;
+
 exports[`text field should render with custom margin and variant 1`] = `
 <div
   className="MuiFormControl-root MuiTextField-root makeStyles-inputLabel-9 MuiFormControl-marginNormal"
