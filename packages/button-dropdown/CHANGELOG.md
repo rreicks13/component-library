@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.18.0](https://github.com/TractorZoom/component-library/compare/v0.17.0...v0.18.0) (2020-08-11)
+
+
+### Features
+
+* add optional prop to be called on selection change ([fce7370](https://github.com/TractorZoom/component-library/commit/fce7370fa95de3e1b8db88be012738ab4c16bdf8))
+
+
+
+
+
 # [0.17.0](https://github.com/TractorZoom/component-library/compare/v0.16.0...v0.17.0) (2020-08-07)
 
 **Note:** Version bump only for package @tractorzoom/button-dropdown

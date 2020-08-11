@@ -1,6 +1,6 @@
 {
     "name": "@tractorzoom/number-field",
-    "version": "0.17.0",
+    "version": "0.18.0",
     "description": "Wrapped Material UI Text Field with React-Number-Format",
     "author": "@TractorZoom",
     "license": "MIT",
