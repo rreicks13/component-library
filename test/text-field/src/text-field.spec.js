@@ -52,4 +52,37 @@ describe('text field', () => {
         // then
         expect(tree).toMatchSnapshot();
     });
+
+    it('should render when type is number', () => {
+        // given
+        const props = {
+            label: 'test',
+            onChange: jest.fn(),
+            type: 'number',
+        };
+
+        // when
+        const component = renderer.create(<TextField {...props} />);
+        const tree = component.toJSON();
+
+        // then
+        expect(tree).toMatchSnapshot();
+    });
+
+    it('should render when type is number with custom step', () => {
+        // given
+        const props = {
+            label: 'test',
+            onChange: jest.fn(),
+            step: 1000,
+            type: 'number',
+        };
+
+        // when
+        const component = renderer.create(<TextField {...props} />);
+        const tree = component.toJSON();
+
+        // then
+        expect(tree).toMatchSnapshot();
+    });
 });
