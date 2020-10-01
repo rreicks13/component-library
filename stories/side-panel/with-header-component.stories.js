@@ -1,3 +1,4 @@
+import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import SidePanel from '../../packages/side-panel/src';
 import React from 'react';
 import propsMarkdown from '../utilities/props/side-panel.md';
@@ -10,6 +11,7 @@ const useStyles = makeStyles({
         padding: 20,
     },
 });
+const theme = createMuiTheme();
 
 storiesOf('Side Panel', module).add(
     'With header component',
@@ -18,13 +20,15 @@ storiesOf('Side Panel', module).add(
         const [open, setOpen] = React.useState(true);
 
         return (
-            <div className={classes.container}>
-                <SidePanel headerComponent={<Typography>Header Text</Typography>} open={open} setOpen={setOpen}>
-                    <Typography>First Child</Typography>
-                    <Typography>Second Child</Typography>
-                    <Typography>Third Child</Typography>
-                </SidePanel>
-            </div>
+            <ThemeProvider theme={theme}>
+                <div className={classes.container}>
+                    <SidePanel headerComponent={<Typography>Header Text</Typography>} open={open} setOpen={setOpen}>
+                        <Typography>First Child</Typography>
+                        <Typography>Second Child</Typography>
+                        <Typography>Third Child</Typography>
+                    </SidePanel>
+                </div>
+            </ThemeProvider>
         );
     },
     {
