@@ -8,11 +8,10 @@ import PropTypes from 'prop-types';
 import useStyles from './styles';
 import withWidth from '@material-ui/core/withWidth';
 
-const theme = createMuiTheme({
+const darkTheme = createMuiTheme({
     palette: {
         type: 'dark',
     },
-    spacing: 5,
 });
 
 const SidePanel = (props) => {
@@ -25,7 +24,20 @@ const SidePanel = (props) => {
     }, []);
 
     return (
-        <ThemeProvider theme={theme}>
+        <ThemeProvider
+            theme={(theme) =>
+                createMuiTheme({
+                    ...theme,
+                    palette: {
+                        ...theme.palette,
+                        background: darkTheme.palette.background,
+                        divider: darkTheme.palette.divider,
+                        text: darkTheme.palette.text,
+                        type: darkTheme.palette.type,
+                    },
+                })
+            }
+        >
             <Drawer
                 className={isMobile ? classes.drawerMobile : classes.drawer}
                 anchor='left'
