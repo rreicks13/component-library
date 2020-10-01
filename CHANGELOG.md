@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.20.1](https://github.com/TractorZoom/component-library/compare/v0.20.0...v0.20.1) (2020-10-01)
+
+
+### Bug Fixes
+
+* extend theme before applying dark theme to side panel ([d89bc93](https://github.com/TractorZoom/component-library/commit/d89bc93a812a3701bf2d6f8b83c627589c43b6ef))
+
+
+
+
+
 # [0.20.0](https://github.com/TractorZoom/component-library/compare/v0.19.2...v0.20.0) (2020-10-01)
 
 
