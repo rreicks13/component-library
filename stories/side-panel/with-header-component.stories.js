@@ -9,9 +9,6 @@ const useStyles = makeStyles({
     container: {
         padding: 20,
     },
-    headerComponent: {
-        color: 'white',
-    },
 });
 
 storiesOf('Side Panel', module).add(
@@ -22,11 +19,7 @@ storiesOf('Side Panel', module).add(
 
         return (
             <div className={classes.container}>
-                <SidePanel
-                    headerComponent={<Typography className={classes.headerComponent}>Header Text</Typography>}
-                    open={open}
-                    setOpen={setOpen}
-                >
+                <SidePanel headerComponent={<Typography>Header Text</Typography>} open={open} setOpen={setOpen}>
                     <Typography>First Child</Typography>
                     <Typography>Second Child</Typography>
                     <Typography>Third Child</Typography>

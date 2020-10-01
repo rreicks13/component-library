@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
@@ -6,6 +7,13 @@ import IconButton from '@material-ui/core/IconButton';
 import PropTypes from 'prop-types';
 import useStyles from './styles';
 import withWidth from '@material-ui/core/withWidth';
+
+const theme = createMuiTheme({
+    palette: {
+        type: 'dark',
+    },
+    spacing: 5,
+});
 
 const SidePanel = (props) => {
     const { open, setOpen } = props;
@@ -17,7 +25,7 @@ const SidePanel = (props) => {
     }, []);
 
     return (
-        <>
+        <ThemeProvider theme={theme}>
             <Drawer
                 className={isMobile ? classes.drawerMobile : classes.drawer}
                 anchor='left'
@@ -45,7 +53,7 @@ const SidePanel = (props) => {
                     return newChild;
                 })}
             </Drawer>
-        </>
+        </ThemeProvider>
     );
 };
 

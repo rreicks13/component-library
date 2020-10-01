@@ -2,7 +2,6 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const paper = {
     width: 300,
-    backgroundColor: '#6c757d',
     top: 'unset',
     borderRight: 'none',
     padding: 20,
@@ -19,7 +18,6 @@ const useStyles = makeStyles((theme) => ({
     },
     drawerHeader: {
         alignItems: 'center',
-        background: '#6c757d',
         display: 'flex',
         flexShrink: 0,
         padding: theme.spacing(0, 1),
@@ -38,19 +36,16 @@ const useStyles = makeStyles((theme) => ({
         width: '100vw',
     },
     headerDivider: {
-        backgroundColor: 'white',
         position: 'sticky',
         top: 48,
         zIndex: 999,
     },
     icon: {
-        color: 'white',
         display: 'block',
         margin: 'auto',
         marginLeft: 5,
     },
     toggleOpenButton: {
-        backgroundColor: '#6c757d',
         borderRadius: '0px 40px 40px 0px',
         display: 'flex',
         height: 50,
