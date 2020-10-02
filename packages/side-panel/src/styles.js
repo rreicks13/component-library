@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
     },
     drawerHeader: {
         alignItems: 'center',
+        backgroundColor: theme.palette.background.main,
         display: 'flex',
         flexShrink: 0,
         padding: theme.spacing(0, 1),
