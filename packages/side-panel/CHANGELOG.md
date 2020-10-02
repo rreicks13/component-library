@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.20.3](https://github.com/TractorZoom/component-library/compare/v0.20.2...v0.20.3) (2020-10-02)
+
+
+### Bug Fixes
+
+* switch background to inherit ([1d0ffd9](https://github.com/TractorZoom/component-library/commit/1d0ffd9a217231ed0e620c4a5ba2a049c5bde9ae))
+
+
+
+
+
 ## [0.20.2](https://github.com/TractorZoom/component-library/compare/v0.20.1...v0.20.2) (2020-10-02)
 
 
