@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.22.1](https://github.com/TractorZoom/component-library/compare/v0.22.0...v0.22.1) (2020-10-16)
+
+
+### Bug Fixes
+
+* handle clearing of the select ([#117](https://github.com/TractorZoom/component-library/issues/117)) ([c96c8d0](https://github.com/TractorZoom/component-library/commit/c96c8d07ef9a88831cd498d9b7301cae3730f3c3))
+
+
+
+
+
 # [0.22.0](https://github.com/TractorZoom/component-library/compare/v0.21.0...v0.22.0) (2020-10-16)
 
 
