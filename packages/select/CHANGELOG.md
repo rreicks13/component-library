@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.22.2](https://github.com/TractorZoom/component-library/compare/v0.22.1...v0.22.2) (2020-10-21)
+
+
+### Bug Fixes
+
+* check that newValue exists before checking label property ([#126](https://github.com/TractorZoom/component-library/issues/126)) ([f446dc1](https://github.com/TractorZoom/component-library/commit/f446dc1a21d43adc8924436c1c917f0053cbf524))
+
+
+
+
+
 ## [0.22.1](https://github.com/TractorZoom/component-library/compare/v0.22.0...v0.22.1) (2020-10-16)
 
 
