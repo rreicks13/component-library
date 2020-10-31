@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.23.1](https://github.com/TractorZoom/component-library/compare/v0.23.0...v0.23.1) (2020-10-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-window to v1.8.6 ([6b931c1](https://github.com/TractorZoom/component-library/commit/6b931c157e25991a5d375c9e53caedc5c2c47750))
+
+
+
+
+
 # [0.23.0](https://github.com/TractorZoom/component-library/compare/v0.22.2...v0.23.0) (2020-10-28)
 
 **Note:** Version bump only for package @tractorzoom/list
