@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.23.3](https://github.com/TractorZoom/component-library/compare/v0.23.2...v0.23.3) (2020-11-04)
+
+
+### Bug Fixes
+
+* size spinner ([19989b5](https://github.com/TractorZoom/component-library/commit/19989b5d55d64422721259f4c4e54dbf9afa8d80))
+
+
+
+
+
 ## [0.23.2](https://github.com/TractorZoom/component-library/compare/v0.23.1...v0.23.2) (2020-11-04)
 
 **Note:** Version bump only for package @tractorzoom/button-dropdown
