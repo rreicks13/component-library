@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.24.0](https://github.com/TractorZoom/component-library/compare/v0.23.3...v0.24.0) (2020-11-17)
+
+
+### Features
+
+* add hover title to usage meter ([29106d2](https://github.com/TractorZoom/component-library/commit/29106d2716aa67d4e07c244620d9006cb5100d8f))
+
+
+
+
+
 ## [0.23.3](https://github.com/TractorZoom/component-library/compare/v0.23.2...v0.23.3) (2020-11-04)
 
 
