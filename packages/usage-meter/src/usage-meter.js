@@ -21,7 +21,7 @@ const UsageMeter = (props) => {
     const colorClassName = getColorClassName(props.percentage);
 
     return (
-        <div className={clsx(classes.container, props.className)}>
+        <div className={clsx(classes.container, props.className)} title={props.hoverTitle}>
             <Box position='relative' display='inline-flex'>
                 <CircularProgress variant='static' className={classes.bottom} value={100} />
                 <CircularProgress
@@ -56,6 +56,7 @@ const UsageMeter = (props) => {
 UsageMeter.defaultProps = {
     className: '',
     darkMode: false,
+    hoverTitle: '',
     label: '',
     title: '',
 };
@@ -63,6 +64,7 @@ UsageMeter.defaultProps = {
 UsageMeter.propTypes = {
     className: PropTypes.string,
     darkMode: PropTypes.bool,
+    hoverTitle: PropTypes.string,
     label: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     percentage: PropTypes.number.isRequired,
     title: PropTypes.string,
