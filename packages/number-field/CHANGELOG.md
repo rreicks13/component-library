@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.27.0](https://github.com/TractorZoom/component-library/compare/v0.26.0...v0.27.0) (2021-01-07)
+
+**Note:** Version bump only for package @tractorzoom/number-field
+
+
+
+
+
 # [0.26.0](https://github.com/TractorZoom/component-library/compare/v0.25.2...v0.26.0) (2021-01-07)
 
 **Note:** Version bump only for package @tractorzoom/number-field

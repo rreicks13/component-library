@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.27.0](https://github.com/TractorZoom/component-library/compare/v0.26.0...v0.27.0) (2021-01-07)
+
+
+### Bug Fixes
+
+* structure of exporting places select ([4a5d330](https://github.com/TractorZoom/component-library/commit/4a5d330b7d94f2e889939e5c6c45108c157a95a5))
+* update export of places select ([6ea643c](https://github.com/TractorZoom/component-library/commit/6ea643c83c3d7877142ef9a78966f67cbc41d468))
+
+
+### Features
+
+* add get full address string ulitity in places select ([1221d47](https://github.com/TractorZoom/component-library/commit/1221d474477d291ae8157b89aab1b24687f99d97))
+
+
+
+
+
 # [0.26.0](https://github.com/TractorZoom/component-library/compare/v0.25.2...v0.26.0) (2021-01-07)
 
 

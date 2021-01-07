@@ -1,6 +1,6 @@
 {
     "name": "@tractorzoom/text-field",
-    "version": "0.26.0",
+    "version": "0.27.0",
     "description": "Wrapper for Material UI's TextField",
     "author": "@TractorZoom",
     "license": "MIT",
