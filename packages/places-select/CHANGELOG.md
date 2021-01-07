@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.26.0](https://github.com/TractorZoom/component-library/compare/v0.25.2...v0.26.0) (2021-01-07)
+
+
+### Bug Fixes
+
+* switch to lat and lon to standardize ([993b4c8](https://github.com/TractorZoom/component-library/commit/993b4c819b5ad63b41a36769bbca95f4eb113ac7))
+
+
+### BREAKING CHANGES
+
+* `latitude`/`longitude` replaced in favor of `lat`/`lon`
+
+
+
+
+
 ## [0.25.2](https://github.com/TractorZoom/component-library/compare/v0.25.1...v0.25.2) (2020-12-30)
 
 **Note:** Version bump only for package @tractorzoom/places-select
