@@ -7,6 +7,20 @@ import Typography from '@material-ui/core/Typography';
 import { matchSorter } from 'match-sorter';
 import useStyles from './styles';
 
+const getObjectOptionLabel = (option) => option.label;
+const renderObjectOption = (option) => (
+    <Typography data-cy={option.label.toLowerCase().split(' ').join('-')} noWrap>
+        {option.label}
+    </Typography>
+);
+
+const getStringOptionLabel = (option) => option;
+const renderStringOption = (option) => (
+    <Typography data-cy={option.toLowerCase().split(' ').join('-')} noWrap>
+        {option}
+    </Typography>
+);
+
 const Select = (props) => {
     const {
         color,
@@ -24,12 +38,6 @@ const Select = (props) => {
 
     const hasStringOptions = options && typeof options[0] === 'string';
     const matchOptions = hasStringOptions ? undefined : { keys: props.filterKeys };
-
-    const getObjectOptionLabel = (option) => option.label;
-    const renderObjectOption = (option) => <Typography noWrap>{option.label}</Typography>;
-
-    const getStringOptionLabel = (option) => option;
-    const renderStringOption = (option) => <Typography noWrap>{option}</Typography>;
 
     const getOptionLabel = hasStringOptions ? getStringOptionLabel : getObjectOptionLabel;
     const defaultRenderOption = hasStringOptions ? renderStringOption : renderObjectOption;
@@ -101,7 +109,7 @@ Select.defaultProps = {
     hasAddNewOption: false,
     helperText: '',
     dataCy: undefined,
-    filterKeys: [],
+    filterKeys: ['label'],
     onAddNew: undefined,
     required: false,
 };

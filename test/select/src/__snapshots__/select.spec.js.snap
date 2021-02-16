@@ -5,7 +5,11 @@ exports[`Select should render empty 1`] = `
   aria-expanded={false}
   aria-owns={null}
   className="MuiAutocomplete-root MuiAutocomplete-hasClearIcon MuiAutocomplete-hasPopupIcon"
-  filterKeys={Array []}
+  filterKeys={
+    Array [
+      "label",
+    ]
+  }
   hasAddNewOption={false}
   onClick={[Function]}
   onKeyDown={[Function]}
@@ -150,7 +154,11 @@ exports[`Select should render with 10000 items 1`] = `
   aria-expanded={false}
   aria-owns={null}
   className="MuiAutocomplete-root MuiAutocomplete-hasClearIcon MuiAutocomplete-hasPopupIcon"
-  filterKeys={Array []}
+  filterKeys={
+    Array [
+      "label",
+    ]
+  }
   hasAddNewOption={false}
   onClick={[Function]}
   onKeyDown={[Function]}
@@ -301,7 +309,11 @@ exports[`Select should render with add new option 1`] = `
   aria-expanded={false}
   aria-owns={null}
   className="MuiAutocomplete-root MuiAutocomplete-hasClearIcon MuiAutocomplete-hasPopupIcon"
-  filterKeys={Array []}
+  filterKeys={
+    Array [
+      "label",
+    ]
+  }
   hasAddNewOption={false}
   onAddNew={[Function]}
   onClick={[Function]}
@@ -447,7 +459,11 @@ exports[`Select should render with error 1`] = `
   aria-expanded={false}
   aria-owns={null}
   className="MuiAutocomplete-root MuiAutocomplete-hasClearIcon MuiAutocomplete-hasPopupIcon"
-  filterKeys={Array []}
+  filterKeys={
+    Array [
+      "label",
+    ]
+  }
   hasAddNewOption={false}
   onClick={[Function]}
   onKeyDown={[Function]}
@@ -592,7 +608,11 @@ exports[`Select should render with helper text 1`] = `
   aria-expanded={false}
   aria-owns={null}
   className="MuiAutocomplete-root MuiAutocomplete-hasClearIcon MuiAutocomplete-hasPopupIcon"
-  filterKeys={Array []}
+  filterKeys={
+    Array [
+      "label",
+    ]
+  }
   hasAddNewOption={false}
   onClick={[Function]}
   onKeyDown={[Function]}
@@ -749,7 +769,11 @@ exports[`Select should render with required 1`] = `
   aria-expanded={false}
   aria-owns={null}
   className="MuiAutocomplete-root MuiAutocomplete-hasClearIcon MuiAutocomplete-hasPopupIcon"
-  filterKeys={Array []}
+  filterKeys={
+    Array [
+      "label",
+    ]
+  }
   hasAddNewOption={false}
   onClick={[Function]}
   onKeyDown={[Function]}
