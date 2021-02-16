@@ -6,7 +6,6 @@ import { storiesOf } from '@storybook/react';
 
 const useStyles = makeStyles({
     container: {
-        backgroundColor: '#6c757d',
         padding: 20,
     },
 });
@@ -36,7 +35,6 @@ storiesOf('Select', module).add(
         return (
             <div className={classes.container}>
                 <Select
-                    darkMode
                     label='Virtualized Select'
                     onChange={onChange}
                     onAddNew={(addNew) => console.log('on add new: ', addNew)}
