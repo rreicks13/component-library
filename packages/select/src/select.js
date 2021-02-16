@@ -1,12 +1,25 @@
-import React, { useState } from 'react';
-import useStyles, { useTextFieldStyles } from './styles';
-import Autocomplete, { createFilterOptions } from '@material-ui/lab/Autocomplete';
+import Autocomplete from '@material-ui/lab/Autocomplete';
 import Listbox from './listbox';
 import PropTypes from 'prop-types';
+import React from 'react';
 import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography';
+import { matchSorter } from 'match-sorter';
+import useStyles from './styles';
 
-const filter = createFilterOptions();
+const getObjectOptionLabel = (option) => option.label;
+const renderObjectOption = (option) => (
+    <Typography data-cy={option.label.toLowerCase().split(' ').join('-')} noWrap>
+        {option.label}
+    </Typography>
+);
+
+const getStringOptionLabel = (option) => option;
+const renderStringOption = (option) => (
+    <Typography data-cy={option.toLowerCase().split(' ').join('-')} noWrap>
+        {option}
+    </Typography>
+);
 
 const Select = (props) => {
     const {
@@ -21,10 +34,13 @@ const Select = (props) => {
         selectedOption,
         ...otherProps
     } = props;
-    const classes = useStyles(darkMode)();
-    const textFieldClasses = useTextFieldStyles(darkMode)();
+    const classes = useStyles();
 
     const hasStringOptions = options && typeof options[0] === 'string';
+    const matchOptions = hasStringOptions ? undefined : { keys: props.filterKeys };
+
+    const getOptionLabel = hasStringOptions ? getStringOptionLabel : getObjectOptionLabel;
+    const defaultRenderOption = hasStringOptions ? renderStringOption : renderObjectOption;
 
     return (
         <Autocomplete
@@ -34,13 +50,13 @@ const Select = (props) => {
             style={{ width: '100%' }}
             classes={classes}
             disableListWrap
-            filterOptions={(options, params) => {
-                const filtered = filter(options, params);
+            filterOptions={(options, { inputValue }) => {
+                const filtered = matchSorter(options, inputValue, matchOptions);
 
-                if (params.inputValue !== '' && props.onAddNew && filtered.length === 0) {
+                if (inputValue !== '' && props.onAddNew && filtered.length === 0) {
                     const addNewOption = {
-                        inputValue: params.inputValue,
-                        label: `+ Add ${params.inputValue}`,
+                        inputValue: inputValue,
+                        label: `+ Add ${inputValue}`,
                     };
 
                     filtered.push(hasStringOptions ? addNewOption.label : addNewOption);
@@ -48,6 +64,7 @@ const Select = (props) => {
 
                 return filtered;
             }}
+            getOptionLabel={getOptionLabel}
             handleHomeEndKeys
             ListboxComponent={Listbox}
             ListboxProps={props}
@@ -55,16 +72,11 @@ const Select = (props) => {
             renderInput={(params) => (
                 <TextField
                     {...params}
-                    className={textFieldClasses.input}
                     color={color}
                     error={error}
                     helperText={helperText}
                     InputProps={{
                         ...params.InputProps,
-                        classes: {
-                            ...params.InputProps.classes,
-                            notchedOutline: textFieldClasses.notchedOutline,
-                        },
                         'data-cy': props.dataCy,
                     }}
                     size='small'
@@ -74,7 +86,7 @@ const Select = (props) => {
                     required={required}
                 />
             )}
-            renderOption={renderOption}
+            renderOption={renderOption || defaultRenderOption}
             value={selectedOption}
             {...otherProps}
             onChange={(event, newValue) => {
@@ -93,23 +105,22 @@ const Select = (props) => {
 
 Select.defaultProps = {
     color: null,
-    darkMode: false,
     error: false,
     hasAddNewOption: false,
     helperText: '',
     dataCy: undefined,
+    filterKeys: ['label'],
     onAddNew: undefined,
-    renderOption: (option) => <Typography noWrap>{option}</Typography>,
     required: false,
 };
 
 Select.propTypes = {
     color: PropTypes.string,
-    darkMode: PropTypes.bool,
     error: PropTypes.bool,
     onAddNew: PropTypes.func,
     helperText: PropTypes.string,
     dataCy: PropTypes.string,
+    filterKeys: PropTypes.array,
     label: PropTypes.string.isRequired,
     onChange: PropTypes.func.isRequired,
     options: PropTypes.array.isRequired,

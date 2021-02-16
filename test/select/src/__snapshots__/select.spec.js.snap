@@ -5,6 +5,11 @@ exports[`Select should render empty 1`] = `
   aria-expanded={false}
   aria-owns={null}
   className="MuiAutocomplete-root MuiAutocomplete-hasClearIcon MuiAutocomplete-hasPopupIcon"
+  filterKeys={
+    Array [
+      "label",
+    ]
+  }
   hasAddNewOption={false}
   onClick={[Function]}
   onKeyDown={[Function]}
@@ -17,7 +22,7 @@ exports[`Select should render empty 1`] = `
   }
 >
   <div
-    className="MuiFormControl-root MuiTextField-root makeStyles-input-5 MuiFormControl-fullWidth"
+    className="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense MuiInputLabel-outlined"
@@ -39,7 +44,7 @@ exports[`Select should render empty 1`] = `
         autoCapitalize="none"
         autoComplete="off"
         autoFocus={false}
-        className="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input makeStyles-input-2 MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
+        className="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
         disabled={false}
         id="select"
         onAnimationStart={[Function]}
@@ -57,7 +62,7 @@ exports[`Select should render empty 1`] = `
       >
         <button
           aria-label="Clear"
-          className="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-clearIndicator makeStyles-clearIndicator-1 MuiAutocomplete-clearIndicatorDirty"
+          className="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-clearIndicator MuiAutocomplete-clearIndicatorDirty"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -92,7 +97,7 @@ exports[`Select should render empty 1`] = `
         </button>
         <button
           aria-label="Open"
-          className="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-popupIndicator makeStyles-popupIndicator-4"
+          className="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-popupIndicator"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -128,10 +133,10 @@ exports[`Select should render empty 1`] = `
       </div>
       <fieldset
         aria-hidden={true}
-        className="PrivateNotchedOutline-root-7 MuiOutlinedInput-notchedOutline makeStyles-notchedOutline-6"
+        className="PrivateNotchedOutline-root-2 MuiOutlinedInput-notchedOutline"
       >
         <legend
-          className="PrivateNotchedOutline-legendLabelled-9"
+          className="PrivateNotchedOutline-legendLabelled-4"
         >
           <span>
             test
@@ -149,6 +154,11 @@ exports[`Select should render with 10000 items 1`] = `
   aria-expanded={false}
   aria-owns={null}
   className="MuiAutocomplete-root MuiAutocomplete-hasClearIcon MuiAutocomplete-hasPopupIcon"
+  filterKeys={
+    Array [
+      "label",
+    ]
+  }
   hasAddNewOption={false}
   onClick={[Function]}
   onKeyDown={[Function]}
@@ -161,7 +171,7 @@ exports[`Select should render with 10000 items 1`] = `
   }
 >
   <div
-    className="MuiFormControl-root MuiTextField-root makeStyles-input-15 MuiFormControl-fullWidth"
+    className="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-marginDense MuiInputLabel-outlined MuiFormLabel-filled"
@@ -183,7 +193,7 @@ exports[`Select should render with 10000 items 1`] = `
         autoCapitalize="none"
         autoComplete="off"
         autoFocus={false}
-        className="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input makeStyles-input-12 MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
+        className="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
         disabled={false}
         id="select"
         onAnimationStart={[Function]}
@@ -201,7 +211,7 @@ exports[`Select should render with 10000 items 1`] = `
       >
         <button
           aria-label="Clear"
-          className="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-clearIndicator makeStyles-clearIndicator-11 MuiAutocomplete-clearIndicatorDirty"
+          className="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-clearIndicator MuiAutocomplete-clearIndicatorDirty"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -239,7 +249,7 @@ exports[`Select should render with 10000 items 1`] = `
         </button>
         <button
           aria-label="Open"
-          className="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-popupIndicator makeStyles-popupIndicator-14"
+          className="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-popupIndicator"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -278,10 +288,10 @@ exports[`Select should render with 10000 items 1`] = `
       </div>
       <fieldset
         aria-hidden={true}
-        className="PrivateNotchedOutline-root-7 MuiOutlinedInput-notchedOutline makeStyles-notchedOutline-16"
+        className="PrivateNotchedOutline-root-2 MuiOutlinedInput-notchedOutline"
       >
         <legend
-          className="PrivateNotchedOutline-legendLabelled-9 PrivateNotchedOutline-legendNotched-10"
+          className="PrivateNotchedOutline-legendLabelled-4 PrivateNotchedOutline-legendNotched-5"
         >
           <span>
             test
@@ -299,6 +309,11 @@ exports[`Select should render with add new option 1`] = `
   aria-expanded={false}
   aria-owns={null}
   className="MuiAutocomplete-root MuiAutocomplete-hasClearIcon MuiAutocomplete-hasPopupIcon"
+  filterKeys={
+    Array [
+      "label",
+    ]
+  }
   hasAddNewOption={false}
   onAddNew={[Function]}
   onClick={[Function]}
@@ -312,7 +327,7 @@ exports[`Select should render with add new option 1`] = `
   }
 >
   <div
-    className="MuiFormControl-root MuiTextField-root makeStyles-input-39 MuiFormControl-fullWidth"
+    className="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense MuiInputLabel-outlined"
@@ -334,7 +349,7 @@ exports[`Select should render with add new option 1`] = `
         autoCapitalize="none"
         autoComplete="off"
         autoFocus={false}
-        className="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input makeStyles-input-36 MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
+        className="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
         disabled={false}
         id="select"
         onAnimationStart={[Function]}
@@ -352,7 +367,7 @@ exports[`Select should render with add new option 1`] = `
       >
         <button
           aria-label="Clear"
-          className="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-clearIndicator makeStyles-clearIndicator-35 MuiAutocomplete-clearIndicatorDirty"
+          className="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-clearIndicator MuiAutocomplete-clearIndicatorDirty"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -387,7 +402,7 @@ exports[`Select should render with add new option 1`] = `
         </button>
         <button
           aria-label="Open"
-          className="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-popupIndicator makeStyles-popupIndicator-38"
+          className="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-popupIndicator"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -423,10 +438,10 @@ exports[`Select should render with add new option 1`] = `
       </div>
       <fieldset
         aria-hidden={true}
-        className="PrivateNotchedOutline-root-7 MuiOutlinedInput-notchedOutline makeStyles-notchedOutline-40"
+        className="PrivateNotchedOutline-root-2 MuiOutlinedInput-notchedOutline"
       >
         <legend
-          className="PrivateNotchedOutline-legendLabelled-9"
+          className="PrivateNotchedOutline-legendLabelled-4"
         >
           <span>
             test
@@ -444,6 +459,11 @@ exports[`Select should render with error 1`] = `
   aria-expanded={false}
   aria-owns={null}
   className="MuiAutocomplete-root MuiAutocomplete-hasClearIcon MuiAutocomplete-hasPopupIcon"
+  filterKeys={
+    Array [
+      "label",
+    ]
+  }
   hasAddNewOption={false}
   onClick={[Function]}
   onKeyDown={[Function]}
@@ -456,7 +476,7 @@ exports[`Select should render with error 1`] = `
   }
 >
   <div
-    className="MuiFormControl-root MuiTextField-root makeStyles-input-27 MuiFormControl-fullWidth"
+    className="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense MuiInputLabel-outlined Mui-error Mui-error"
@@ -478,7 +498,7 @@ exports[`Select should render with error 1`] = `
         autoCapitalize="none"
         autoComplete="off"
         autoFocus={false}
-        className="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input makeStyles-input-24 MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
+        className="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
         disabled={false}
         id="select"
         onAnimationStart={[Function]}
@@ -496,7 +516,7 @@ exports[`Select should render with error 1`] = `
       >
         <button
           aria-label="Clear"
-          className="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-clearIndicator makeStyles-clearIndicator-23 MuiAutocomplete-clearIndicatorDirty"
+          className="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-clearIndicator MuiAutocomplete-clearIndicatorDirty"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -531,7 +551,7 @@ exports[`Select should render with error 1`] = `
         </button>
         <button
           aria-label="Open"
-          className="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-popupIndicator makeStyles-popupIndicator-26"
+          className="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-popupIndicator"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -567,10 +587,10 @@ exports[`Select should render with error 1`] = `
       </div>
       <fieldset
         aria-hidden={true}
-        className="PrivateNotchedOutline-root-7 MuiOutlinedInput-notchedOutline makeStyles-notchedOutline-28"
+        className="PrivateNotchedOutline-root-2 MuiOutlinedInput-notchedOutline"
       >
         <legend
-          className="PrivateNotchedOutline-legendLabelled-9"
+          className="PrivateNotchedOutline-legendLabelled-4"
         >
           <span>
             test
@@ -588,6 +608,11 @@ exports[`Select should render with helper text 1`] = `
   aria-expanded={false}
   aria-owns={null}
   className="MuiAutocomplete-root MuiAutocomplete-hasClearIcon MuiAutocomplete-hasPopupIcon"
+  filterKeys={
+    Array [
+      "label",
+    ]
+  }
   hasAddNewOption={false}
   onClick={[Function]}
   onKeyDown={[Function]}
@@ -600,7 +625,7 @@ exports[`Select should render with helper text 1`] = `
   }
 >
   <div
-    className="MuiFormControl-root MuiTextField-root makeStyles-input-33 MuiFormControl-fullWidth"
+    className="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense MuiInputLabel-outlined"
@@ -623,7 +648,7 @@ exports[`Select should render with helper text 1`] = `
         autoCapitalize="none"
         autoComplete="off"
         autoFocus={false}
-        className="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input makeStyles-input-30 MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
+        className="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
         disabled={false}
         id="select"
         onAnimationStart={[Function]}
@@ -641,7 +666,7 @@ exports[`Select should render with helper text 1`] = `
       >
         <button
           aria-label="Clear"
-          className="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-clearIndicator makeStyles-clearIndicator-29 MuiAutocomplete-clearIndicatorDirty"
+          className="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-clearIndicator MuiAutocomplete-clearIndicatorDirty"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -679,7 +704,7 @@ exports[`Select should render with helper text 1`] = `
         </button>
         <button
           aria-label="Open"
-          className="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-popupIndicator makeStyles-popupIndicator-32"
+          className="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-popupIndicator"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -718,10 +743,10 @@ exports[`Select should render with helper text 1`] = `
       </div>
       <fieldset
         aria-hidden={true}
-        className="PrivateNotchedOutline-root-7 MuiOutlinedInput-notchedOutline makeStyles-notchedOutline-34"
+        className="PrivateNotchedOutline-root-2 MuiOutlinedInput-notchedOutline"
       >
         <legend
-          className="PrivateNotchedOutline-legendLabelled-9"
+          className="PrivateNotchedOutline-legendLabelled-4"
         >
           <span>
             test
@@ -744,6 +769,11 @@ exports[`Select should render with required 1`] = `
   aria-expanded={false}
   aria-owns={null}
   className="MuiAutocomplete-root MuiAutocomplete-hasClearIcon MuiAutocomplete-hasPopupIcon"
+  filterKeys={
+    Array [
+      "label",
+    ]
+  }
   hasAddNewOption={false}
   onClick={[Function]}
   onKeyDown={[Function]}
@@ -756,7 +786,7 @@ exports[`Select should render with required 1`] = `
   }
 >
   <div
-    className="MuiFormControl-root MuiTextField-root makeStyles-input-21 MuiFormControl-fullWidth"
+    className="MuiFormControl-root MuiTextField-root MuiFormControl-fullWidth"
   >
     <label
       className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense MuiInputLabel-outlined Mui-required Mui-required"
@@ -785,7 +815,7 @@ exports[`Select should render with required 1`] = `
         autoCapitalize="none"
         autoComplete="off"
         autoFocus={false}
-        className="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input makeStyles-input-18 MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
+        className="MuiInputBase-input MuiOutlinedInput-input MuiAutocomplete-input MuiAutocomplete-inputFocused MuiInputBase-inputAdornedEnd MuiOutlinedInput-inputAdornedEnd MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
         disabled={false}
         id="select"
         onAnimationStart={[Function]}
@@ -803,7 +833,7 @@ exports[`Select should render with required 1`] = `
       >
         <button
           aria-label="Clear"
-          className="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-clearIndicator makeStyles-clearIndicator-17 MuiAutocomplete-clearIndicatorDirty"
+          className="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-clearIndicator MuiAutocomplete-clearIndicatorDirty"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -841,7 +871,7 @@ exports[`Select should render with required 1`] = `
         </button>
         <button
           aria-label="Open"
-          className="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-popupIndicator makeStyles-popupIndicator-20"
+          className="MuiButtonBase-root MuiIconButton-root MuiAutocomplete-popupIndicator"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -880,10 +910,10 @@ exports[`Select should render with required 1`] = `
       </div>
       <fieldset
         aria-hidden={true}
-        className="PrivateNotchedOutline-root-7 MuiOutlinedInput-notchedOutline makeStyles-notchedOutline-22"
+        className="PrivateNotchedOutline-root-2 MuiOutlinedInput-notchedOutline"
       >
         <legend
-          className="PrivateNotchedOutline-legendLabelled-9"
+          className="PrivateNotchedOutline-legendLabelled-4"
         >
           <span>
             test
