@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.28.1](https://github.com/TractorZoom/component-library/compare/v0.28.0...v0.28.1) (2021-02-25)
+
+
+### Bug Fixes
+
+* option to reverse sort order ([#143](https://github.com/TractorZoom/component-library/issues/143)) ([a777740](https://github.com/TractorZoom/component-library/commit/a77774095cdc3eeda11283da055569136999f66c))
+
+
+
+
+
 # [0.28.0](https://github.com/TractorZoom/component-library/compare/v0.27.0...v0.28.0) (2021-02-16)
 
 
