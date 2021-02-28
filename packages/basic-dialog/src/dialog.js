@@ -4,20 +4,21 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Typography } from '@material-ui/core';
+import Typography from '@material-ui/core/Typography';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import useStyles from './styles';
 
 const BasicDialog = (props) => {
-    const classes = useStyles();
+    const classes = useStyles(props.size);
     const isMobile = useMediaQuery('(max-width:600px)');
+    const containerClassName = props.size === 'small' ? classes.smallContainer : classes.largeContainer;
 
     return (
         <Dialog
             fullScreen={isMobile}
             open={props.isOpen}
             onClose={props.close}
-            PaperProps={{ className: classes.container, 'data-tour': props.dataTour }}
+            PaperProps={{ className: containerClassName, 'data-tour': props.dataTour }}
         >
             <DialogTitle className={classes.titleContainer} disableTypography>
                 <Typography variant='h5'>{props.title}</Typography>
@@ -32,6 +33,7 @@ BasicDialog.defaultProps = {
     actionButtons: [],
     dataTour: '',
     isOpen: false,
+    size: 'small',
 };
 
 BasicDialog.propTypes = {
@@ -40,6 +42,7 @@ BasicDialog.propTypes = {
     close: PropTypes.func.isRequired,
     dataTour: PropTypes.string,
     isOpen: PropTypes.bool,
+    size: PropTypes.oneOf(['small', 'large']).isRequired,
     title: PropTypes.string.isRequired,
 };
 
