@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.29.0](https://github.com/TractorZoom/component-library/compare/v0.28.2...v0.29.0) (2021-02-28)
+
+
+### Features
+
+* add ability to specify custom header ([bd7c8b2](https://github.com/TractorZoom/component-library/commit/bd7c8b2fd3920854788e8642aa50cc104f933890))
+* allow for larger sized dialogs via prop ([0f47d3c](https://github.com/TractorZoom/component-library/commit/0f47d3ccd3a61298eddacc96435da2cc8feb7fa9))
+
+
+
+
+
 ## [0.28.2](https://github.com/TractorZoom/component-library/compare/v0.28.1...v0.28.2) (2021-02-25)
 
 
