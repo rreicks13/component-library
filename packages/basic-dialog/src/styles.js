@@ -1,11 +1,15 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
-    container: {
-        minWidth: '50%',
-    },
     contentContainer: {
         padding: `0 ${theme.spacing(4)}px`,
+    },
+    largeContainer: {
+        minHeight: '80%',
+        minWidth: '80%',
+    },
+    smallContainer: {
+        minWidth: '50%',
     },
     titleContainer: {
         alignItems: 'center',
