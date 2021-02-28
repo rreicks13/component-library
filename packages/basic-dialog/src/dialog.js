@@ -20,9 +20,13 @@ const BasicDialog = (props) => {
             onClose={props.close}
             PaperProps={{ className: containerClassName, 'data-tour': props.dataTour }}
         >
-            <DialogTitle className={classes.titleContainer} disableTypography>
-                <Typography variant='h5'>{props.title}</Typography>
-            </DialogTitle>
+            {Boolean(props.headerComponent) ? (
+                props.headerComponent
+            ) : (
+                <DialogTitle className={classes.titleContainer} disableTypography>
+                    <Typography variant='h5'>{props.title}</Typography>
+                </DialogTitle>
+            )}
             <DialogContent className={classes.contentContainer}>{props.children || ''}</DialogContent>
             <DialogActions className={classes.footerContainer}>{props.actionButtons}</DialogActions>
         </Dialog>
@@ -41,9 +45,10 @@ BasicDialog.propTypes = {
     children: PropTypes.node,
     close: PropTypes.func.isRequired,
     dataTour: PropTypes.string,
+    headerComponent: PropTypes.node,
     isOpen: PropTypes.bool,
-    size: PropTypes.oneOf(['small', 'large']).isRequired,
-    title: PropTypes.string.isRequired,
+    size: PropTypes.oneOf(['small', 'large']),
+    title: PropTypes.string,
 };
 
 export default BasicDialog;
