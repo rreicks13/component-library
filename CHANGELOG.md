@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.29.1](https://github.com/TractorZoom/component-library/compare/v0.29.0...v0.29.1) (2021-03-03)
+
+
+### Bug Fixes
+
+* scope matching results to ones containing geolocaitons ([d8f172d](https://github.com/TractorZoom/component-library/commit/d8f172ded99b30a36baac45af8e4d396acd7ff82))
+
+
+
+
+
 # [0.29.0](https://github.com/TractorZoom/component-library/compare/v0.28.2...v0.29.0) (2021-02-28)
 
 
