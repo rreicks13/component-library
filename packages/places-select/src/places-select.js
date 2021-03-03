@@ -17,7 +17,12 @@ const PlacesSelect = (props) => {
         clearSuggestions,
         suggestions: { status, data },
         setValue,
-    } = usePlacesAutocomplete({ debounce: 300 });
+    } = usePlacesAutocomplete({ 
+        requestOptions: {
+            types: ['geocode']
+        },
+        debounce: 300 
+    });
 
     const handleInput = (e, newInputValue) => {
         setValue(newInputValue);
