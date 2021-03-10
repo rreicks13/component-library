@@ -17,11 +17,11 @@ const PlacesSelect = (props) => {
         clearSuggestions,
         suggestions: { status, data },
         setValue,
-    } = usePlacesAutocomplete({ 
+    } = usePlacesAutocomplete({
         requestOptions: {
-            types: ['geocode']
+            types: ['geocode'],
         },
-        debounce: 300 
+        debounce: 300,
     });
 
     const handleInput = (e, newInputValue) => {
@@ -38,12 +38,12 @@ const PlacesSelect = (props) => {
 
             const geocodedAddress = await getGeocode({ address: val.description });
             const { lat, lng: lon } = await getLatLng(geocodedAddress[0]);
-            
-            console.debug('geocodeAdress: ', geocodedAddress);
-            console.debug('lat: ', lat, 'lon: ', lon)
-            
+
+            console.log('geocodeAdress: ', geocodedAddress);
+            console.log('lat: ', lat, 'lon: ', lon);
+
             geocodedAddress[0].address_components.forEach((component) => {
-                console.debug('component: ', component)
+                console.log('component: ', component);
                 if (component.types.includes('street_number')) {
                     address.streetNumber = component.long_name;
                 }
@@ -69,14 +69,15 @@ const PlacesSelect = (props) => {
                 }
             });
 
-            address = { 
-                ...address, 
-                address: address.streetNumber && address.street ? `${address.streetNumber} ${address.street}` : undefined, 
-                lat, 
-                lon 
+            address = {
+                ...address,
+                address:
+                    address.streetNumber && address.street ? `${address.streetNumber} ${address.street}` : undefined,
+                lat,
+                lon,
             };
 
-            console.debug('address: ', address)
+            console.log('address: ', address);
         }
 
         setAddress(address);
