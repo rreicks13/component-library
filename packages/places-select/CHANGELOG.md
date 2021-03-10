@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.29.2](https://github.com/TractorZoom/component-library/compare/v0.29.1...v0.29.2) (2021-03-10)
+
+
+### Bug Fixes
+
+* undefined street number, add debug logging ([8af2ab3](https://github.com/TractorZoom/component-library/commit/8af2ab3ef8fdf1106d4f46b7aa321ec161c51413))
+
+
+
+
+
 ## [0.29.1](https://github.com/TractorZoom/component-library/compare/v0.29.0...v0.29.1) (2021-03-03)
 
 
