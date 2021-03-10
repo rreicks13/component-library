@@ -37,7 +37,7 @@ const PlacesSelect = (props) => {
         if (val) {
             address = { fullAddress: val.description };
 
-            const geocodedAddress = await getGeocode({ address: val.description });
+            const geocodedAddress = await getGeocode({ placeId: val.place_id });
             const { lat, lng: lon } = await getLatLng(geocodedAddress[0]);
 
             console.log('geocodeAdress: ', geocodedAddress);
