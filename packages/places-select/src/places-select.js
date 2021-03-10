@@ -38,8 +38,12 @@ const PlacesSelect = (props) => {
 
             const geocodedAddress = await getGeocode({ address: val.description });
             const { lat, lng: lon } = await getLatLng(geocodedAddress[0]);
-
+            
+            console.debug('geocodeAdress: ', geocodedAddress);
+            console.debug('lat: ', lat, 'lon: ', lon)
+            
             geocodedAddress[0].address_components.forEach((component) => {
+                console.debug('component: ', component)
                 if (component.types.includes('street_number')) {
                     address.streetNumber = component.long_name;
                 }
@@ -65,7 +69,14 @@ const PlacesSelect = (props) => {
                 }
             });
 
-            address = { ...address, address: `${address.streetNumber} ${address.street}`, lat, lon };
+            address = { 
+                ...address, 
+                address: address.streetNumber && address.street ? `${address.streetNumber} ${address.street}` : undefined, 
+                lat, 
+                lon 
+            };
+
+            console.debug('address: ', address)
         }
 
         setAddress(address);
