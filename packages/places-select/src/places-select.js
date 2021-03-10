@@ -30,6 +30,7 @@ const PlacesSelect = (props) => {
 
     const handleSelect = async (e, val) => {
         setValue(val, false);
+        console.log('val: ', val);
 
         let address = {};
 
