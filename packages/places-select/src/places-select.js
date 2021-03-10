@@ -72,8 +72,7 @@ const PlacesSelect = (props) => {
 
             address = {
                 ...address,
-                address:
-                    address.streetNumber && address.street ? `${address.streetNumber} ${address.street}` : undefined,
+                address: address.streetNumber && address.street ? `${address.streetNumber} ${address.street}` : '',
                 lat,
                 lon,
             };
