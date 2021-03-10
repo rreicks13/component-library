@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.30.0](https://github.com/TractorZoom/component-library/compare/v0.29.4...v0.30.0) (2021-03-10)
+
+
+### Features
+
+* use place id instead of address on getGeocode ([5cabca3](https://github.com/TractorZoom/component-library/commit/5cabca3caf1020e46c68a9ea308256539c3db78c))
+
+
+
+
+
 ## [0.29.4](https://github.com/TractorZoom/component-library/compare/v0.29.3...v0.29.4) (2021-03-10)
 
 **Note:** Version bump only for package @tractorzoom/component-library

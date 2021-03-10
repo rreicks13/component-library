@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.30.0](https://github.com/TractorZoom/component-library/compare/v0.29.4...v0.30.0) (2021-03-10)
+
+**Note:** Version bump only for package @tractorzoom/button-dropdown
+
+
+
+
+
 # [0.29.0](https://github.com/TractorZoom/component-library/compare/v0.28.2...v0.29.0) (2021-02-28)
 
 **Note:** Version bump only for package @tractorzoom/button-dropdown
