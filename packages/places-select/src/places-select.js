@@ -32,7 +32,16 @@ const PlacesSelect = (props) => {
         setValue(val, false);
         console.log('val: ', val);
 
-        let address = {};
+        let address = {
+            address: null,
+            city: null,
+            country: null,
+            fullAddress: null,
+            lat: null,
+            lon: null,
+            state: null,
+            zip: null,
+        };
 
         if (val) {
             address = { fullAddress: val.description };
@@ -70,12 +79,11 @@ const PlacesSelect = (props) => {
                 }
             });
 
-            address = {
-                ...address,
-                address: address.streetNumber && address.street ? `${address.streetNumber} ${address.street}` : '',
-                lat,
-                lon,
-            };
+            if (address.streetNumber && address.street) {
+                address.address = `${address.streetNumber} ${address.street}`;
+            }
+            address.lat = lat;
+            address.lon = lon;
 
             console.log('address: ', address);
         }
