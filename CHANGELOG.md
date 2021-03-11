@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.31.2](https://github.com/TractorZoom/component-library/compare/v0.31.1...v0.31.2) (2021-03-11)
+
+
+### Bug Fixes
+
+* stop overwriting null address ([8472278](https://github.com/TractorZoom/component-library/commit/8472278fa9c052028373f8255752a40060922bf3))
+
+
+
+
+
 ## [0.31.1](https://github.com/TractorZoom/component-library/compare/v0.31.0...v0.31.1) (2021-03-11)
 
 
