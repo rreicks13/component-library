@@ -40,24 +40,24 @@ jobs:
               env:
                   GH_TOKEN: ${{ github.token }}
 
-    publish-github-pages:
-        needs: npm-publish
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v2
-            - uses: actions/setup-node@v1
-              with:
-                  node-version: 12
-            - run: npm ci
-            - name: Lerna Bootstrap
-              uses: m19c/action-lerna@master
-              with:
-                  args: 'bootstrap'
-            - run: npm run build-storybook
-            - name: 'Deploy to GitHub Pages'
-              uses: crazy-max/ghaction-github-pages@v1
-              with:
-                  target_branch: gh-pages
-                  build_dir: storybook-static
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    # publish-github-pages:
+    #     needs: npm-publish
+    #     runs-on: ubuntu-latest
+    #     steps:
+    #         - uses: actions/checkout@v2
+    #         - uses: actions/setup-node@v1
+    #           with:
+    #               node-version: 12
+    #         - run: npm ci
+    #         - name: Lerna Bootstrap
+    #           uses: m19c/action-lerna@master
+    #           with:
+    #               args: 'bootstrap'
+    #         - run: npm run build-storybook
+    #         - name: 'Deploy to GitHub Pages'
+    #           uses: crazy-max/ghaction-github-pages@v1
+    #           with:
+    #               target_branch: gh-pages
+    #               build_dir: storybook-static
+    #           env:
+    #               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
