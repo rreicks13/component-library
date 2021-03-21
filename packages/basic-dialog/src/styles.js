@@ -1,24 +1,36 @@
 import { makeStyles } from '@material-ui/core/styles';
 
+const containerStyles = {
+    borderRadius: 20,
+    padding: '0 5%',
+};
+
 const useStyles = makeStyles((theme) => ({
     contentContainer: {
-        padding: `0 ${theme.spacing(4)}px`,
+        padding: 0,
     },
     largeContainer: {
-        minHeight: '80%',
-        minWidth: '80%',
+        ...containerStyles,
+        minWidth: '60%',
+    },
+    mobileContainer: {
+        padding: '0 5%',
     },
     smallContainer: {
-        minWidth: '50%',
+        ...containerStyles,
+        minWidth: 600,
     },
     titleContainer: {
         alignItems: 'center',
         display: 'flex',
         justifyContent: 'space-between',
-        padding: theme.spacing(4),
+        margin: '30px 0',
+        padding: 0,
     },
     footerContainer: {
-        padding: theme.spacing(4),
+        marginTop: 20,
+        marginBottom: 40,
+        padding: 0,
     },
 }));
 
