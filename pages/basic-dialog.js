@@ -25,11 +25,7 @@ export default () => {
                 </Button>,
             ]}
             close={closeDialog(setIsCustomHeaderOpen)}
-            headerComponent={
-                <Typography style={{ background: 'blue', color: 'white', fontSize: 24, padding: 20 }}>
-                    This is my custom header
-                </Typography>
-            }
+            headerComponent={<img src='/iron-comps-powered-by-tractor-zoom_rectangle.svg' style={{ height: 25 }} />}
             isOpen={isCustomHeaderOpen}
         >
             <Typography>Dialog content is passed in as children</Typography>
