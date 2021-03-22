@@ -3,6 +3,118 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.32.0 (2021-03-22)
+
+
+
+# 0.31.0 (2021-03-10)
+
+
+
+# 0.30.0 (2021-03-10)
+
+
+
+# 0.29.0 (2021-02-28)
+
+
+
+# 0.28.0 (2021-02-16)
+
+
+
+# 0.27.0 (2021-01-07)
+
+
+
+# 0.26.0 (2021-01-07)
+
+
+
+# 0.25.0 (2020-11-24)
+
+
+
+# 0.24.0 (2020-11-17)
+
+
+
+## 0.23.1 (2020-10-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-window to v1.8.6 ([6b931c1](https://github.com/TractorZoom/component-library/commit/6b931c157e25991a5d375c9e53caedc5c2c47750))
+
+
+
+# 0.23.0 (2020-10-28)
+
+
+
+# 0.22.0 (2020-10-16)
+
+
+
+# 0.21.0 (2020-10-02)
+
+
+
+# 0.20.0 (2020-10-01)
+
+
+
+# 0.19.0 (2020-08-11)
+
+
+
+# 0.18.0 (2020-08-11)
+
+
+
+# 0.17.0 (2020-08-07)
+
+
+
+# 0.16.0 (2020-08-07)
+
+
+
+## 0.15.1 (2020-08-03)
+
+
+
+# 0.15.0 (2020-08-03)
+
+
+
+# 0.14.0 (2020-07-29)
+
+
+
+# 0.13.0 (2020-07-29)
+
+
+
+# 0.12.0 (2020-07-27)
+
+
+
+# 0.11.0 (2020-07-27)
+
+
+
+# 0.10.0 (2020-07-21)
+
+
+### Features
+
+* added virtualized list component ([886d78e](https://github.com/TractorZoom/component-library/commit/886d78e477afd8c02555edfcd7403163653d0e8d))
+
+
+
+
+
 # [0.31.0](https://github.com/TractorZoom/component-library/compare/v0.30.0...v0.31.0) (2021-03-10)
 
 **Note:** Version bump only for package @tractorzoom/list
