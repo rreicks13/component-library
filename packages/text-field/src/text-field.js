@@ -1,4 +1,5 @@
 import InfoRoundedIcon from '@material-ui/icons/InfoRounded';
+import InputAdornment from '@material-ui/core/InputAdornment';
 import MuiTextField from '@material-ui/core/TextField';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -10,7 +11,11 @@ const TextField = (props) => {
     const classes = useStyles();
     const inputLabelPropsObj = InputLabelProps;
     const inputPropsObj = {};
-    const errorAdornment = otherProps.error ? <InfoRoundedIcon className={classes.errorIcon} /> : null;
+    const errorAdornment = otherProps.error ? (
+        <InputAdornment position='end'>
+            <InfoRoundedIcon className={classes.errorIcon} />
+        </InputAdornment>
+    ) : null;
     const endAdornment = InputProps.endAdornment ? InputProps.endAdornment : errorAdornment;
 
     if (otherProps?.type === 'number') {

@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
+import InputAdornment from '@material-ui/core/InputAdornment';
 import TextField from '../packages/text-field/src/index';
 import Typography from '@material-ui/core/Typography';
 
 const TextFieldExamples = () => {
     const [withLabelValue, setWithLabelValue] = useState('');
     const [withCustomStepValue, setWithCustomStepValue] = useState(null);
+    const [withEndAdornmentValue, setWithEndAdornmentValue] = useState(null);
+    const [withErrorEndAdornmentValue, setWithErrorEndAdornmentValue] = useState(null);
 
     const onChange = (setterFunc) => (event) => {
         setterFunc(event.target.value);
@@ -52,6 +55,29 @@ const TextFieldExamples = () => {
                 style={{ marginTop: 20 }}
                 type='number'
                 value={withCustomStepValue}
+            />
+            <TextField
+                helperText='Custom end adornment'
+                InputProps={{
+                    endAdornment: <InputAdornment position='end'>ft</InputAdornment>,
+                }}
+                label='Width'
+                onChange={onChange(setWithEndAdornmentValue)}
+                style={{ marginTop: 20 }}
+                type='number'
+                value={withEndAdornmentValue}
+            />
+            <TextField
+                error
+                helperText='Errored with custom end adornment'
+                InputProps={{
+                    endAdornment: <InputAdornment position='end'>ft</InputAdornment>,
+                }}
+                label='Width'
+                onChange={onChange(setWithErrorEndAdornmentValue)}
+                style={{ marginTop: 20 }}
+                type='number'
+                value={withErrorEndAdornmentValue}
             />
         </div>
     );
