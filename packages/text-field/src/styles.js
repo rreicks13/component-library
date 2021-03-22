@@ -1,8 +1,19 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-export default (darkMode) =>
-    makeStyles((theme) => ({
-        inputBorder: darkMode ? { borderColor: theme.palette.common.white } : {},
-        inputLabel: darkMode ? { '& label': { color: theme.palette.common.white } } : {},
-        inputValue: darkMode ? { color: theme.palette.common.white } : {},
-    }));
+const useStyles = makeStyles((theme) => ({
+    error: {
+        border: `1px solid ${theme.palette.error.main} !important`,
+    },
+    errorIcon: {
+        color: theme.palette.error.main,
+    },
+    focused: {
+        border: `1px solid ${theme.palette.primary.main} !important`,
+    },
+    input: {
+        border: `1px solid transparent`,
+        borderRadius: 8,
+    },
+}));
+
+export default useStyles;
