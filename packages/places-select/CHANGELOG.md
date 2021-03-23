@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.32.2](https://github.com/TractorZoom/component-library/compare/@tractorzoom/places-select@0.32.1...@tractorzoom/places-select@0.32.2) (2021-03-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency use-places-autocomplete to v1.9.1 ([05c9f5d](https://github.com/TractorZoom/component-library/commit/05c9f5d0955e328cb4c81a7ae8aca6e219fec516))
+
+
+
+
+
 ## [0.32.1](https://github.com/TractorZoom/component-library/compare/@tractorzoom/places-select@0.32.0...@tractorzoom/places-select@0.32.1) (2021-03-22)
 
 **Note:** Version bump only for package @tractorzoom/places-select
