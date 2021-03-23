@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.32.1](https://github.com/TractorZoom/component-library/compare/@tractorzoom/number-field@0.32.0...@tractorzoom/number-field@0.32.1) (2021-03-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-number-format to v4.5.1 ([3673344](https://github.com/TractorZoom/component-library/commit/367334400d01398b0cecbb681ea9c72909a8e23b))
+
+
+
+
+
 # 0.32.0 (2021-03-22)
 
 
