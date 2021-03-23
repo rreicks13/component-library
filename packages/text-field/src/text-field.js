@@ -1,3 +1,4 @@
+import CancelRoundedIcon from '@material-ui/icons/CancelRounded';
 import InfoRoundedIcon from '@material-ui/icons/InfoRounded';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import MuiTextField from '@material-ui/core/TextField';
@@ -5,18 +6,42 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import clsx from 'clsx';
 import useStyles from './styles';
+import IconButton from '@material-ui/core/IconButton';
 
 const TextField = (props) => {
-    const { className, InputLabelProps, InputProps, step, ...otherProps } = props;
+    const { InputLabelProps, InputProps, step, suffixLabel, ...otherProps } = props;
     const classes = useStyles();
-    const inputLabelPropsObj = InputLabelProps;
+    const labelClassName = otherProps.value && !otherProps.error ? classes.activeLabel : '';
+    const inputLabelPropsObj = {
+        ...InputLabelProps,
+        className: InputLabelProps.className ? clsx(labelClassName, InputLabelProps.className) : labelClassName,
+    };
     const inputPropsObj = {};
-    const errorAdornment = otherProps.error ? (
+    const clear = () => {
+        otherProps.onChange({
+            target: {
+                value: '',
+            },
+        });
+    };
+    const errorOrClearAdornment = otherProps.error ? (
         <InputAdornment position='end'>
             <InfoRoundedIcon className={classes.errorIcon} />
         </InputAdornment>
+    ) : otherProps.value && !otherProps.disabled ? (
+        <InputAdornment position='end'>
+            <IconButton onClick={clear}>
+                <CancelRoundedIcon className={classes.clearIcon} />
+            </IconButton>
+        </InputAdornment>
     ) : null;
-    const endAdornment = InputProps.endAdornment ? InputProps.endAdornment : errorAdornment;
+    const endAdornment = suffixLabel ? (
+        <InputAdornment className={classes.suffixLabel} position='end'>
+            {suffixLabel}
+        </InputAdornment>
+    ) : (
+        errorOrClearAdornment
+    );
 
     if (otherProps?.type === 'number') {
         inputPropsObj.step = step;
@@ -31,7 +56,7 @@ const TextField = (props) => {
             InputLabelProps={inputLabelPropsObj}
             InputProps={{
                 ...InputProps,
-                className: InputProps.className ? clsx(InputProps.className, classes.input) : classes.input,
+                className: InputProps.className ? clsx(classes.input, InputProps.className) : classes.input,
                 classes: {
                     error: classes.error,
                     focused: classes.focused,
@@ -46,18 +71,18 @@ const TextField = (props) => {
 };
 
 TextField.defaultProps = {
-    className: '',
     InputLabelProps: {},
     InputProps: {},
     step: 1,
+    suffixLabel: '',
     variant: 'filled',
 };
 
 TextField.propTypes = {
-    className: PropTypes.string,
     InputLabelProps: PropTypes.object,
     InputProps: PropTypes.object,
     step: PropTypes.number,
+    suffixLabel: PropTypes.string,
     variant: PropTypes.string,
 };
 

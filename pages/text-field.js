@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import InputAdornment from '@material-ui/core/InputAdornment';
 import TextField from '../packages/text-field/src/index';
 import Typography from '@material-ui/core/Typography';
 
@@ -26,6 +25,7 @@ const TextFieldExamples = () => {
                 @tractorzoom/text-field
             </Typography>
             <TextField
+                helperText='Enabled'
                 label='Input Label'
                 onChange={onChange(setWithLabelValue)}
                 style={{ marginTop: 20 }}
@@ -58,21 +58,17 @@ const TextFieldExamples = () => {
             />
             <TextField
                 helperText='Custom end adornment'
-                InputProps={{
-                    endAdornment: <InputAdornment position='end'>ft</InputAdornment>,
-                }}
                 label='Width'
                 onChange={onChange(setWithEndAdornmentValue)}
                 style={{ marginTop: 20 }}
+                suffixLabel='ft'
                 type='number'
                 value={withEndAdornmentValue}
             />
             <TextField
                 error
                 helperText='Errored with custom end adornment'
-                InputProps={{
-                    endAdornment: <InputAdornment position='end'>ft</InputAdornment>,
-                }}
+                suffixLabel='ft'
                 label='Width'
                 onChange={onChange(setWithErrorEndAdornmentValue)}
                 style={{ marginTop: 20 }}
