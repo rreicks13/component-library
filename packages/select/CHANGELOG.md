@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.32.1](https://github.com/TractorZoom/component-library/compare/@tractorzoom/select@0.32.0...@tractorzoom/select@0.32.1) (2021-03-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency match-sorter to v6.3.0 ([7ee9cf7](https://github.com/TractorZoom/component-library/commit/7ee9cf7a314d4d78c01f3008d459073778eb33f5))
+
+
+
+
+
 # 0.32.0 (2021-03-22)
 
 
