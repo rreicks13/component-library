@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.32.1](https://github.com/TractorZoom/component-library/compare/@tractorzoom/list@0.32.0...@tractorzoom/list@0.32.1) (2021-03-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-virtualized-auto-sizer to v1.0.5 ([da6e36d](https://github.com/TractorZoom/component-library/commit/da6e36dc587e5c7da319c0176255573308751e16))
+
+
+
+
+
 # 0.32.0 (2021-03-22)
 
 
