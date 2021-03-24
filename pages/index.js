@@ -15,6 +15,9 @@ export default () => {
             <Link href='/basic-dialog'>
                 <Button variant='contained'>@tractorzoom/basic-dialog</Button>
             </Link>
+            <Link href='/button'>
+                <Button variant='contained'>@tractorzoom/button</Button>
+            </Link>
             <Link href='/text-field'>
                 <Button variant='contained'>@tractorzoom/text-field</Button>
             </Link>

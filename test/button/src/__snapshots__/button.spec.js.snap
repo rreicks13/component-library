@@ -2,8 +2,9 @@
 
 exports[`Button should render when disabled 1`] = `
 <button
-  className="MuiButtonBase-root MuiButton-root MuiButton-contained Mui-disabled Mui-disabled"
-  disabled={true}
+  className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-1"
+  disabled={false}
+  isDisabled={true}
   onBlur={[Function]}
   onDragLeave={[Function]}
   onFocus={[Function]}
@@ -15,21 +16,24 @@ exports[`Button should render when disabled 1`] = `
   onTouchEnd={[Function]}
   onTouchMove={[Function]}
   onTouchStart={[Function]}
-  tabIndex={-1}
+  tabIndex={0}
+  title="some button title"
   type="button"
 >
   <span
     className="MuiButton-label"
-  >
-    some button title
-  </span>
+  />
+  <span
+    className="MuiTouchRipple-root"
+  />
 </button>
 `;
 
 exports[`Button should render when loading 1`] = `
 <button
-  className="MuiButtonBase-root MuiButton-root MuiButton-contained Mui-disabled Mui-disabled"
-  disabled={true}
+  className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-1"
+  disabled={false}
+  isLoading={true}
   onBlur={[Function]}
   onDragLeave={[Function]}
   onFocus={[Function]}
@@ -41,45 +45,19 @@ exports[`Button should render when loading 1`] = `
   onTouchEnd={[Function]}
   onTouchMove={[Function]}
   onTouchStart={[Function]}
-  tabIndex={-1}
+  tabIndex={0}
+  title="some button title"
   type="button"
 >
   <span
     className="MuiButton-label"
-  >
-    <div
-      className="MuiCircularProgress-root makeStyles-loadingSpinnerInLabel-2 MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
-      role="progressbar"
-      style={
-        Object {
-          "height": 40,
-          "width": 40,
-        }
-      }
-    >
-      <svg
-        className="MuiCircularProgress-svg"
-        viewBox="22 22 44 44"
-      >
-        <circle
-          className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
-          cx={44}
-          cy={44}
-          fill="none"
-          r={20.2}
-          strokeWidth={3.6}
-          style={Object {}}
-        />
-      </svg>
-    </div>
-    some button title
-  </span>
+  />
 </button>
 `;
 
 exports[`Button should render with custom variant 1`] = `
 <button
-  className="MuiButtonBase-root MuiButton-root MuiButton-outlined"
+  className="MuiButtonBase-root MuiButton-root MuiButton-outlined makeStyles-button-1"
   disabled={false}
   onBlur={[Function]}
   onDragLeave={[Function]}
@@ -93,13 +71,12 @@ exports[`Button should render with custom variant 1`] = `
   onTouchMove={[Function]}
   onTouchStart={[Function]}
   tabIndex={0}
+  title="some button title"
   type="button"
 >
   <span
     className="MuiButton-label"
-  >
-    some button title
-  </span>
+  />
   <span
     className="MuiTouchRipple-root"
   />
@@ -108,7 +85,7 @@ exports[`Button should render with custom variant 1`] = `
 
 exports[`Button should render with required props 1`] = `
 <button
-  className="MuiButtonBase-root MuiButton-root MuiButton-contained"
+  className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-1"
   disabled={false}
   onBlur={[Function]}
   onDragLeave={[Function]}
@@ -122,19 +99,18 @@ exports[`Button should render with required props 1`] = `
   onTouchMove={[Function]}
   onTouchStart={[Function]}
   tabIndex={0}
+  title="some button title"
   type="button"
 >
   <span
     className="MuiButton-label"
-  >
-    some button title
-  </span>
+  />
 </button>
 `;
 
 exports[`Button should render with start icon 1`] = `
 <button
-  className="MuiButtonBase-root MuiButton-root MuiButton-contained"
+  className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-1"
   disabled={false}
   onBlur={[Function]}
   onDragLeave={[Function]}
@@ -148,6 +124,7 @@ exports[`Button should render with start icon 1`] = `
   onTouchMove={[Function]}
   onTouchStart={[Function]}
   tabIndex={0}
+  title="some button title"
   type="button"
 >
   <span
@@ -167,15 +144,15 @@ exports[`Button should render with start icon 1`] = `
         />
       </svg>
     </span>
-    some button title
   </span>
 </button>
 `;
 
 exports[`Button should render with start icon when loading 1`] = `
 <button
-  className="MuiButtonBase-root MuiButton-root MuiButton-contained Mui-disabled Mui-disabled"
-  disabled={true}
+  className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-button-1"
+  disabled={false}
+  isLoading={true}
   onBlur={[Function]}
   onDragLeave={[Function]}
   onFocus={[Function]}
@@ -187,7 +164,8 @@ exports[`Button should render with start icon when loading 1`] = `
   onTouchEnd={[Function]}
   onTouchMove={[Function]}
   onTouchStart={[Function]}
-  tabIndex={-1}
+  tabIndex={0}
+  title="some button title"
   type="button"
 >
   <span
@@ -196,33 +174,20 @@ exports[`Button should render with start icon when loading 1`] = `
     <span
       className="MuiButton-startIcon MuiButton-iconSizeMedium"
     >
-      <div
-        className="MuiCircularProgress-root makeStyles-loadingSpinnerInIcon-1 MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate"
-        role="progressbar"
-        style={
-          Object {
-            "height": 40,
-            "width": 40,
-          }
-        }
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root"
+        focusable="false"
+        viewBox="0 0 24 24"
       >
-        <svg
-          className="MuiCircularProgress-svg"
-          viewBox="22 22 44 44"
-        >
-          <circle
-            className="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate"
-            cx={44}
-            cy={44}
-            fill="none"
-            r={20.2}
-            strokeWidth={3.6}
-            style={Object {}}
-          />
-        </svg>
-      </div>
+        <path
+          d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"
+        />
+      </svg>
     </span>
-    some button title
   </span>
+  <span
+    className="MuiTouchRipple-root"
+  />
 </button>
 `;
