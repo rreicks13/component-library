@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/TractorZoom/component-library/compare/@tractorzoom/button@0.32.0...@tractorzoom/button@1.1.0) (2021-03-24)
+
+
+### Features
+
+* change button props to align with material button and update styles ([6c15948](https://github.com/TractorZoom/component-library/commit/6c1594856637ad31fc0344794946b1e4e802244a))
+* fix casing to capitalize for button ([354e9a4](https://github.com/TractorZoom/component-library/commit/354e9a4e513777197c58601ba8af0528d3e8df36))
+
+
+
+
+
 # 0.32.0 (2021-03-22)
 
 
