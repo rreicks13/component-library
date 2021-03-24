@@ -1,49 +1,27 @@
 import MuiTextField from '@material-ui/core/TextField';
 import PropTypes from 'prop-types';
 import React from 'react';
-import clsx from 'clsx';
-import useStyles from './styles';
+import useTextField from './hook';
 
 const TextField = (props) => {
-    const { className, darkMode, InputProps, margin, step, variant, ...otherProps } = props;
-    const classes = useStyles(darkMode)();
-    const inputPropsObj = { className: classes.inputValue };
+    const textFieldProps = useTextField(props);
 
-    if (otherProps.type === 'number') {
-        inputPropsObj.step = step;
-    }
-
-    return (
-        <MuiTextField
-            className={clsx(classes.inputLabel, className)}
-            InputLabelProps={otherProps?.type === 'date' ? { shrink: true } : {}}
-            InputProps={{
-                ...InputProps,
-                classes: { notchedOutline: classes.inputBorder },
-                inputProps: inputPropsObj,
-            }}
-            margin={margin}
-            variant={variant}
-            {...otherProps}
-        />
-    );
+    return <MuiTextField {...textFieldProps} />;
 };
 
 TextField.defaultProps = {
-    className: '',
-    darkMode: false,
+    InputLabelProps: {},
     InputProps: {},
-    margin: 'dense',
     step: 1,
-    variant: 'outlined',
+    suffixLabel: '',
+    variant: 'filled',
 };
 
 TextField.propTypes = {
-    className: PropTypes.string,
-    darkMode: PropTypes.bool,
+    InputLabelProps: PropTypes.object,
     InputProps: PropTypes.object,
-    margin: PropTypes.string,
     step: PropTypes.number,
+    suffixLabel: PropTypes.string,
     variant: PropTypes.string,
 };
 
