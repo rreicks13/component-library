@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.33.0](https://github.com/TractorZoom/component-library/compare/@tractorzoom/text-field@0.32.0...@tractorzoom/text-field@0.33.0) (2021-03-24)
+
+
+### Features
+
+* add label coloring and handle suffix label spacing ([635f327](https://github.com/TractorZoom/component-library/commit/635f32740ee0f60c473409f8c3ca25cb71eec3bf))
+* release as breaking change ([986b75d](https://github.com/TractorZoom/component-library/commit/986b75dbbba369740347605ac8f855cd533f2295))
+* update default text field styles ([d0c6bc5](https://github.com/TractorZoom/component-library/commit/d0c6bc5731a5431c71c66531d6caed04f5e4d209))
+* update docs ([80e78ff](https://github.com/TractorZoom/component-library/commit/80e78ff435a0d1806511459295dd02423fe6493e))
+* use input adornment for error icon ([c163b64](https://github.com/TractorZoom/component-library/commit/c163b64d0b0e4b84d05524ffcc4555625b809264))
+
+
+### BREAKING CHANGES
+
+* Updates to styling
+
+
+
+
+
 # 0.32.0 (2021-03-22)
 
 
