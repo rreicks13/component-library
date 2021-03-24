@@ -9,6 +9,7 @@ const useStyles = makeStyles((theme) => ({
     button: {
         borderRadius: 8,
         padding: '9px 24px',
+        textTransform: 'capitalize',
     },
     loadingSpinnerInIcon: {
         ...loadingSpinner,
