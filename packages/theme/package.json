@@ -1,0 +1,36 @@
+{
+    "name": "@tractorzoom/theme",
+    "version": "1.0.0",
+    "description": "Customized Material UI theme for Tractor Zoom",
+    "author": "@TractorZoom",
+    "license": "MIT",
+    "main": "lib/index.js",
+    "engines": {
+        "node": "12.x"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/TractorZoom/component-library.git"
+    },
+    "homepage": "https://github.com/TractorZoom/component-library/packages/theme/README.md",
+    "bugs": {
+        "url": "https://github.com/TractorZoom/component-library/issues"
+    },
+    "keywords": [
+        "material-ui",
+        "theme"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "build": "../../node_modules/.bin/babel src --out-dir lib --copy-files",
+        "prepublish": "npm run build"
+    },
+    "peerDependencies": {
+        "@material-ui/core": "^4.10.2"
+    },
+    "dependencies": {
+        "@fontsource/inter": "4.2.2"
+    }
+}

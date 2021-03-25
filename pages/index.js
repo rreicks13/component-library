@@ -21,6 +21,9 @@ export default () => {
             <Link href='/text-field'>
                 <Button variant='contained'>@tractorzoom/text-field</Button>
             </Link>
+            <Link href='/theme'>
+                <Button variant='contained'>@tractorzoom/theme</Button>
+            </Link>
         </div>
     );
 };

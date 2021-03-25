@@ -1,26 +1,12 @@
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import React from 'react';
+import { ThemeProvider } from '@material-ui/core/styles';
+import { ironComps } from '../packages/theme/src/index';
 import '../styles.css';
-
-const theme = createMuiTheme({
-    palette: {
-        primary: {
-            main: '#0a6ef3',
-            dark: '#31435a',
-        },
-        secondary: {
-            main: '#f63c28',
-        },
-        contrastThreshold: 3,
-        tonalOffset: 0.2,
-    },
-    spacing: 5,
-});
 
 function App({ Component, pageProps }) {
     return (
-        <ThemeProvider theme={theme}>
+        <ThemeProvider theme={ironComps}>
             <CssBaseline />
             <Component {...pageProps} />
         </ThemeProvider>
