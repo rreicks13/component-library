@@ -8,18 +8,22 @@ const useStyles = makeStyles((theme) => ({
         color: '#989898',
     },
     error: {
-        border: `1px solid ${theme.palette.error.main} !important`,
+        border: `2px solid ${theme.palette.error.main} !important`,
     },
     errorIcon: {
         color: theme.palette.error.main,
         margin: 12,
     },
     focused: {
-        border: `1px solid ${theme.palette.primary.main} !important`,
+        border: `2px solid ${theme.palette.primary.main} !important`,
     },
     input: {
-        border: `1px solid transparent`,
+        backgroundColor: 'rgba(0, 0, 0, 0.05) !important',
+        border: `2px solid transparent`,
         borderRadius: 8,
+        '&:hover': {
+            backgroundColor: 'rgba(0, 0, 0, 0.08) !important',
+        },
     },
     suffixLabel: {
         fontSize: '1.5rem',

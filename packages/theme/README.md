@@ -1,7 +1,5 @@
 # @tractorzoom/theme
 
-Wrapper for Material UI's [TextField](https://material-ui.com/components/text-fields/#text-field)
-
 ## Install
 
 ```

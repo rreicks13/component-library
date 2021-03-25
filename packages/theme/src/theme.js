@@ -21,6 +21,7 @@ const Theme = createMuiTheme({
             main: '#008a1a',
         },
         text: {
+            disabled: 'rgba(0, 0, 0, 0.25)',
             primary: IC_BLACK,
             secondary: '#818181',
         },
