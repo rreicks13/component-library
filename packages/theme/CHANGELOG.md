@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/TractorZoom/component-library/compare/@tractorzoom/theme@1.1.0...@tractorzoom/theme@1.1.1) (2021-03-26)
+
+
+### Bug Fixes
+
+* remove import of font in package ([9801251](https://github.com/TractorZoom/component-library/commit/9801251b378f4df5c2cfbdace0def6cf1f3338d6))
+
+
+
+
+
 # 1.1.0 (2021-03-25)
 
 
