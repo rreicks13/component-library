@@ -1,5 +1,4 @@
 import { createMuiTheme } from '@material-ui/core/styles';
-import '@fontsource/inter';
 
 const IC_BLACK = '#202020';
 
