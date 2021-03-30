@@ -11,7 +11,7 @@ exports[`text field should render when type is date 1`] = `
     test
   </label>
   <div
-    className="MuiInputBase-root MuiFilledInput-root makeStyles-input-6 MuiInputBase-formControl"
+    className="MuiInputBase-root MuiFilledInput-root makeStyles-input-7 MuiInputBase-formControl"
     onClick={[Function]}
   >
     <input
@@ -41,7 +41,7 @@ exports[`text field should render when type is number 1`] = `
     test
   </label>
   <div
-    className="MuiInputBase-root MuiFilledInput-root makeStyles-input-6 MuiInputBase-formControl"
+    className="MuiInputBase-root MuiFilledInput-root makeStyles-input-7 MuiInputBase-formControl"
     onClick={[Function]}
   >
     <input
@@ -72,7 +72,7 @@ exports[`text field should render when type is number with custom step 1`] = `
     test
   </label>
   <div
-    className="MuiInputBase-root MuiFilledInput-root makeStyles-input-6 MuiInputBase-formControl"
+    className="MuiInputBase-root MuiFilledInput-root makeStyles-input-7 MuiInputBase-formControl"
     onClick={[Function]}
   >
     <input
@@ -103,7 +103,7 @@ exports[`text field should render with custom margin and variant 1`] = `
     test
   </label>
   <div
-    className="MuiInputBase-root MuiFilledInput-root makeStyles-input-6 MuiInputBase-formControl"
+    className="MuiInputBase-root MuiFilledInput-root makeStyles-input-7 MuiInputBase-formControl"
     onClick={[Function]}
   >
     <input
@@ -133,7 +133,7 @@ exports[`text field should render with default margin and variant 1`] = `
     test
   </label>
   <div
-    className="MuiInputBase-root MuiFilledInput-root makeStyles-input-6 MuiInputBase-formControl"
+    className="MuiInputBase-root MuiFilledInput-root makeStyles-input-7 MuiInputBase-formControl"
     onClick={[Function]}
   >
     <input

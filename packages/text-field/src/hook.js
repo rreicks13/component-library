@@ -53,6 +53,7 @@ const useTextField = (props) => {
         ...InputProps,
         className: InputProps.className ? clsx(classes.input, InputProps.className) : classes.input,
         classes: {
+            adornedEnd: classes.adornedEnd,
             error: classes.error,
             focused: classes.focused,
         },

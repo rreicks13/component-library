@@ -4,18 +4,11 @@ const useStyles = makeStyles((theme) => ({
     activeLabel: {
         color: theme.palette.primary.main,
     },
-    adornedEnd: {
-        paddingRight: 0,
-    },
-    clearIcon: {
-        color: '#989898',
+    chevronIcon: {
+        right: 12,
     },
     error: {
         border: `2px solid ${theme.palette.error.main} !important`,
-    },
-    errorIcon: {
-        color: theme.palette.error.main,
-        margin: 12,
     },
     focused: {
         border: `2px solid ${theme.palette.primary.main} !important`,
@@ -27,10 +20,6 @@ const useStyles = makeStyles((theme) => ({
         '&:hover': {
             backgroundColor: 'rgba(0, 0, 0, 0.08) !important',
         },
-    },
-    suffixLabel: {
-        fontSize: '1.5rem',
-        margin: 18,
     },
 }));
 
