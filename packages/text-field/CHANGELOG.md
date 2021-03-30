@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.33.2](https://github.com/TractorZoom/component-library/compare/@tractorzoom/text-field@0.33.1...@tractorzoom/text-field@0.33.2) (2021-03-30)
+
+
+### Bug Fixes
+
+* align spacing on select and text field ([fbbf33e](https://github.com/TractorZoom/component-library/commit/fbbf33eabc4e06eca8f699b109a1c7f90bb1b964))
+
+
+
+
+
 ## [0.33.1](https://github.com/TractorZoom/component-library/compare/@tractorzoom/text-field@0.33.0...@tractorzoom/text-field@0.33.1) (2021-03-25)
 
 
