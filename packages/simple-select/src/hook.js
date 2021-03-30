@@ -29,6 +29,9 @@ const useSimpleSelect = (props) => {
     };
     const selectPropsObj = {
         ...SelectProps,
+        classes: {
+            icon: classes.chevronIcon,
+        },
         IconComponent: KeyboardArrowDownIcon,
     };
 

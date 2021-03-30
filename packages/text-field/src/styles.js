@@ -4,6 +4,9 @@ const useStyles = makeStyles((theme) => ({
     activeLabel: {
         color: theme.palette.primary.main,
     },
+    adornedEnd: {
+        paddingRight: 0,
+    },
     clearIcon: {
         color: '#989898',
     },

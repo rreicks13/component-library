@@ -4,11 +4,11 @@ const useStyles = makeStyles((theme) => ({
     activeLabel: {
         color: theme.palette.primary.main,
     },
+    chevronIcon: {
+        right: 12,
+    },
     error: {
         border: `2px solid ${theme.palette.error.main} !important`,
-    },
-    chevronIcon: {
-        margin: 12,
     },
     focused: {
         border: `2px solid ${theme.palette.primary.main} !important`,
