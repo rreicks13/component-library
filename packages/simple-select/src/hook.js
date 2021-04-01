@@ -27,9 +27,11 @@ const useSimpleSelect = (props) => {
         ...InputLabelProps,
         className: InputLabelProps.className ? clsx(labelClassName, InputLabelProps.className) : labelClassName,
     };
+    const selectPropsClasses = SelectProps.classes ? SelectProps.classes : {};
     const selectPropsObj = {
         ...SelectProps,
         classes: {
+            ...selectPropsClasses,
             icon: classes.chevronIcon,
         },
         IconComponent: KeyboardArrowDownIcon,

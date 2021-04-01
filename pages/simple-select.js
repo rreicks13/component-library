@@ -1,12 +1,33 @@
 import React, { useState } from 'react';
 import SimpleSelect from '../packages/simple-select/src/index';
+import TextField from '../packages/text-field/src/text-field';
 import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+    optionsSelect: {
+        maxWidth: 60,
+    },
+    optionsInput: {
+        borderBottomRightRadius: 0,
+        borderTopRightRadius: 0,
+    },
+    optionsSelectInput: {
+        borderBottomLeftRadius: 0,
+        borderTopLeftRadius: 0,
+    },
+    optionsSelectLabel: {
+        padding: `19px 12px 18px`,
+    },
+}));
 
 const SimpleSelectExamples = () => {
-    const [withStringOptionsValue, setWithStringOptionsValue] = useState('');
-    const stringOptions = ['hello', 'world', 'mario'];
+    const classes = useStyles();
+    const [withStringOptionsValue, setWithStringOptionsValue] = useState('ft');
+    const stringOptions = ['ft', 'in'];
 
     const [withObjectOptionsValue, setWithObjectOptionsValue] = useState('');
+    const [inputValue, setInputValue] = useState('');
     const objectOptions = [
         { value: '1', label: 'Tractor' },
         { value: '2', label: 'Zoom' },
@@ -36,6 +57,23 @@ const SimpleSelectExamples = () => {
                 style={{ marginTop: 20 }}
                 value={withStringOptionsValue}
             />
+            <div style={{ marginTop: 20 }}>
+                <TextField
+                    helperText='Enabled'
+                    label='Input Label'
+                    InputProps={{ className: classes.optionsInput }}
+                    onChange={onChange(setInputValue)}
+                    value={inputValue}
+                ></TextField>
+                <SimpleSelect
+                    className={classes.optionsSelect}
+                    SelectProps={{ classes: { select: classes.optionsSelectLabel } }}
+                    InputProps={{ className: classes.optionsSelectInput }}
+                    options={stringOptions}
+                    onChange={onChange(setWithStringOptionsValue)}
+                    value={withStringOptionsValue}
+                />
+            </div>
             <SimpleSelect
                 disabled
                 helperText='Disabled'
