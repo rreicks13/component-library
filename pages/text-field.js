@@ -5,6 +5,8 @@ import Typography from '@material-ui/core/Typography';
 const TextFieldExamples = () => {
     const [withLabelValue, setWithLabelValue] = useState('');
     const [withCustomStepValue, setWithCustomStepValue] = useState(null);
+    const [withOptionsValue, setWithOptionsValue] = useState(null);
+    const [selectedOption, setSelectedOption] = useState(null);
     const [withEndAdornmentValue, setWithEndAdornmentValue] = useState(null);
     const [withErrorEndAdornmentValue, setWithErrorEndAdornmentValue] = useState(null);
 
@@ -55,6 +57,17 @@ const TextFieldExamples = () => {
                 style={{ marginTop: 20 }}
                 type='number'
                 value={withCustomStepValue}
+            />
+            <TextField
+                helperText='Number input with options'
+                label='Input Label'
+                onChange={onChange(setWithOptionsValue)}
+                style={{ marginTop: 20 }}
+                suffixOnChange={onChange(setSelectedOption)}
+                suffixOptions={['GAL', 'T']}
+                suffixValue={selectedOption}
+                type='number'
+                value={withOptionsValue}
             />
             <TextField
                 helperText='Custom end adornment'

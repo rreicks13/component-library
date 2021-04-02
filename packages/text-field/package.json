@@ -29,7 +29,8 @@
         "prepublish": "npm run build"
     },
     "peerDependencies": {
-        "@material-ui/core": "^4.10.2"
+        "@material-ui/core": "^4.10.2",
+        "@tractorzoom/simple-select": "^1.1.0"
     },
     "dependencies": {
         "clsx": "^1.1.1"
