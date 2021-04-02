@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography';
 
 const SimpleSelectExamples = () => {
     const [withStringOptionsValue, setWithStringOptionsValue] = useState('');
-    const stringOptions = ['hello', 'world', 'mario'];
+    const stringOptions = ['ft', 'in'];
 
     const [withObjectOptionsValue, setWithObjectOptionsValue] = useState('');
     const objectOptions = [

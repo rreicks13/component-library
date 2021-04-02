@@ -8,7 +8,16 @@ import useStyles from './styles';
 
 const useTextField = (props) => {
     const classes = useStyles();
-    const { InputLabelProps, InputProps, step, suffixLabel, ...otherProps } = props;
+    const {
+        InputLabelProps,
+        InputProps,
+        step,
+        suffixLabel,
+        suffixOnChange,
+        suffixOptions,
+        suffixValue,
+        ...otherProps
+    } = props;
     const labelClassName = otherProps.value && !otherProps.error ? classes.activeLabel : '';
     const inputLabelPropsObj = {
         ...InputLabelProps,
@@ -51,7 +60,10 @@ const useTextField = (props) => {
 
     const updatedInputProps = {
         ...InputProps,
-        className: InputProps.className ? clsx(classes.input, InputProps.className) : classes.input,
+        className: clsx(classes.input, {
+            [classes.optionsInput]: suffixOptions.length,
+            [InputProps.className]: Boolean(InputProps.className),
+        }),
         classes: {
             adornedEnd: classes.adornedEnd,
             error: classes.error,
@@ -64,8 +76,20 @@ const useTextField = (props) => {
 
     return {
         ...otherProps,
+        className: clsx({
+            [classes.optionsTextField]: suffixOptions.length,
+            [otherProps.className]: Boolean(otherProps.className),
+        }),
         InputLabelProps: inputLabelPropsObj,
         InputProps: updatedInputProps,
+        optionsSelectProps: {
+            className: classes.optionsSelect,
+            SelectProps: { classes: { select: classes.optionsSelectLabel } },
+            InputProps: { className: classes.optionsSelectInput },
+            options: suffixOptions,
+            onChange: suffixOnChange,
+            value: suffixValue,
+        },
     };
 };
 
