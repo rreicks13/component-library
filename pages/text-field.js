@@ -6,7 +6,7 @@ const TextFieldExamples = () => {
     const [withLabelValue, setWithLabelValue] = useState('');
     const [withCustomStepValue, setWithCustomStepValue] = useState(null);
     const [withOptionsValue, setWithOptionsValue] = useState(null);
-    const [selectedOption, setSelectedOption] = useState(null);
+    const [selectedOption, setSelectedOption] = useState('GAL');
     const [withEndAdornmentValue, setWithEndAdornmentValue] = useState(null);
     const [withErrorEndAdornmentValue, setWithErrorEndAdornmentValue] = useState(null);
 
