@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.34.0](https://github.com/TractorZoom/component-library/compare/@tractorzoom/text-field@0.33.2...@tractorzoom/text-field@0.34.0) (2021-04-02)
+
+
+### Features
+
+* update text field component to accept suffix options ([1bdc401](https://github.com/TractorZoom/component-library/commit/1bdc4016a6e69be3ee3d4c569f6a49ae162109b1))
+
+
+
+
+
 ## [0.33.2](https://github.com/TractorZoom/component-library/compare/@tractorzoom/text-field@0.33.1...@tractorzoom/text-field@0.33.2) (2021-03-30)
 
 

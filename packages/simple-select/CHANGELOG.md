@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/TractorZoom/component-library/compare/@tractorzoom/simple-select@1.1.0...@tractorzoom/simple-select@1.2.0) (2021-04-02)
+
+
+### Features
+
+* add example for using input options field ([32c0588](https://github.com/TractorZoom/component-library/commit/32c05888e86bec4373295a8fdf1e0e2298312c26))
+
+
+
+
+
 # 1.1.0 (2021-03-30)
 
 
