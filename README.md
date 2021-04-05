@@ -6,7 +6,7 @@ Component library using Material UI
 
 [![Publish Status](https://github.com/TractorZoom/component-library/workflows/publish/badge.svg)](https://github.com/TractorZoom/component-library/actions) [![PR Verify Status](https://github.com/TractorZoom/component-library/workflows/pull_request_verify/badge.svg)](https://github.com/TractorZoom/component-library/actions)
 
-[Live Examples with Storybook](https://tractorzoom.github.io/component-library/)
+[Live Examples](https://component-library-git-master-tractorzoomdevs.vercel.app)
 
 ## Contributing
 
@@ -19,10 +19,6 @@ We use Prettier with pre-commit hooks to format the majority of our code style p
 ### Committing
 
 We use commitlint to ensure our commit messages are consistent and semantic. Commitlint is enable through a pre-commit hook with `husky`. For assistance with making commit messages that abide by our configuration, use `npm run commit` to step through the commitizen wizard to commit staged changes.
-
-### Storybook
-
-We use [Storybook](https://github.com/storybookjs/storybook) to create our examples for our component. If you are adding or editing props to the `VirtualizedSelect` component, ensure that you have added or updated any stories effected to document the functionality of the component.
 
 ### Testing
 
