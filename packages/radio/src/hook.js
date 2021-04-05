@@ -1,6 +1,8 @@
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import MuiRadio from '@material-ui/core/Radio';
 import React from 'react';
+import clsx from 'clsx';
+import useStyles from './styles';
 
 const getOptions = (options) => {
     const isStringOption = options && typeof options[0] === 'string';
@@ -14,12 +16,19 @@ const getOptions = (options) => {
 };
 
 const useRadio = (props) => {
+    const classes = useStyles();
+    const { labelProps } = props;
+    const activeClassName = props.value && !props.error ? classes.activeLabel : '';
+    const labelClassName = labelProps.className ? clsx(activeClassName, labelProps.className) : activeClassName;
+    const updatedLabelProps = {
+        component: 'legend',
+        ...labelProps,
+        className: labelClassName,
+    };
+
     return {
         label: props.label,
-        labelProps: {
-            component: 'legend',
-            ...props.labelProps,
-        },
+        labelProps: updatedLabelProps,
         options: getOptions(props.options),
         radioGroupProps: {
             row: true,

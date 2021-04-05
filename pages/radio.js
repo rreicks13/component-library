@@ -3,13 +3,14 @@ import Radio from '../packages/radio/src/index';
 import Typography from '@material-ui/core/Typography';
 
 const RadioExamples = () => {
-    const [withStringOptionsValue, setWithStringOptionsValue] = useState('');
-    const stringOptions = ['Yes', 'No'];
+    const [withStringOptionsValue, setWithStringOptionsValue] = useState('Unknown');
+    const stringOptions = ['Yes', 'No', 'Unknown'];
 
-    const [withObjectOptionsValue, setWithObjectOptionsValue] = useState(null);
+    const [withObjectOptionsValue, setWithObjectOptionsValue] = useState('3');
     const objectOptions = [
         { value: '1', label: 'Yes' },
         { value: '2', label: 'No' },
+        { value: '3', label: 'Unknown' },
     ];
 
     const onChange = (setterFunc) => (event) => {
