@@ -2,7 +2,7 @@
 
 Wrapped Material UI basic dialog with mobile optimization
 
-[Live Examples with Storybook](https://tractorzoom.github.io/component-library/?path=/story/basic-dialog)
+[Live Examples](https://component-library-git-master-tractorzoomdevs.vercel.app/basic-dialog)
 
 ## Install
 

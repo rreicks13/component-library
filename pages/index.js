@@ -18,11 +18,14 @@ export default () => {
             <Link href='/button'>
                 <Button variant='contained'>@tractorzoom/button</Button>
             </Link>
-            <Link href='/text-field'>
-                <Button variant='contained'>@tractorzoom/text-field</Button>
+            <Link href='/radio'>
+                <Button variant='contained'>@tractorzoom/radio</Button>
             </Link>
             <Link href='/simple-select'>
                 <Button variant='contained'>@tractorzoom/simple-select</Button>
+            </Link>
+            <Link href='/text-field'>
+                <Button variant='contained'>@tractorzoom/text-field</Button>
             </Link>
             <Link href='/theme'>
                 <Button variant='contained'>@tractorzoom/theme</Button>

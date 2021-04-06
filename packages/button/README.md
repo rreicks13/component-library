@@ -2,7 +2,7 @@
 
 Wrapped Material UI button
 
-[Live Examples with Storybook](https://tractorzoom.github.io/component-library/?path=/story/button)
+[Live Examples](https://component-library-git-master-tractorzoomdevs.vercel.app/button)
 
 ## Install
 
