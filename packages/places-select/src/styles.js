@@ -1,5 +1,7 @@
 import { makeStyles } from '@material-ui/core/styles';
 
+const materialTextFieldDefaultPadding = '27px 12px 10px';
+
 const useStyles = makeStyles((theme) => ({
     activeLabel: {
         color: theme.palette.primary.main,
@@ -8,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
         padding: `0 !important`,
     },
     chevronIcon: {
-        marginRight: 12,
+        marginRight: theme.spacing(3),
     },
     error: {
         border: `2px solid ${theme.palette.error.main} !important`,
@@ -29,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     nativeInput: {
-        padding: '27px 12px 10px !important',
+        padding: `${materialTextFieldDefaultPadding} !important`,
     },
 }));
 
