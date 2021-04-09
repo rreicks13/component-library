@@ -1,10 +1,37 @@
+import React, { useRef } from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import React from 'react';
 import { ThemeProvider } from '@material-ui/core/styles';
 import { ironComps } from '../packages/theme/src/index';
 import '../styles.css';
 
+function loadScript(src, position, id) {
+    if (!position) {
+        return;
+    }
+    const script = document.createElement('script');
+    script.setAttribute('async', '');
+    script.setAttribute('id', id);
+    script.src = src;
+    position.appendChild(script);
+}
+
+const isCSR = () => typeof window !== 'undefined';
+
 function App({ Component, pageProps }) {
+    const loaded = useRef(false);
+
+    if (isCSR() && !loaded.current) {
+        if (!document.querySelector('#google-maps')) {
+            loadScript(
+                `https://maps.googleapis.com/maps/api/js?key=AIzaSyDr-SGbvKH9Yegh9Uxx1_k5gKLzTjgMNKQ&libraries=places`,
+                document.querySelector('head'),
+                'google-maps'
+            );
+        }
+
+        loaded.current = true;
+    }
+
     return (
         <ThemeProvider theme={ironComps}>
             <CssBaseline />
