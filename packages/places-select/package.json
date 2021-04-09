@@ -32,11 +32,11 @@
     },
     "peerDependencies": {
         "@material-ui/core": "^4.11.0",
-        "@material-ui/lab": "^4.0.0-alpha.56"
+        "@material-ui/lab": "^4.0.0-alpha.56",
+        "clsx": "^1.1.1"
     },
     "dependencies": {
         "autosuggest-highlight": "3.1.1",
-        "clsx": "1.1.1",
         "use-places-autocomplete": "1.9.1"
     }
 }
