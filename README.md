@@ -20,7 +20,17 @@ To run the examples locally, ensure you have your env variables set (in your `.e
 | --------------------------------- | --------------------- | --------------------- |
 | `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY` | _google_maps_api_key_ | _google_maps_api_key_ |
 
-Then run `npm run dev`
+Install shared dependencies and all package dependencies
+
+```
+npm ci && ./node_modules/.bin/lerna bootstrap
+```
+
+Then run the next examples
+
+```
+npm run dev
+```
 
 ### Code Style
 
