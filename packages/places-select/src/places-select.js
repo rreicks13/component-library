@@ -1,17 +1,62 @@
 import usePlacesAutocomplete, { getGeocode, getLatLng } from 'use-places-autocomplete';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import Grid from '@material-ui/core/Grid';
+import InputAdornment from '@material-ui/core/InputAdornment';
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import PropTypes from 'prop-types';
 import React from 'react';
 import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography';
+import clsx from 'clsx';
 import parse from 'autosuggest-highlight/parse';
 import useStyles from './styles';
 
 const PlacesSelect = (props) => {
     const classes = useStyles();
-    const { address, setAddress } = props;
+    const { address, setAddress, InputLabelProps, InputProps, ...otherProps } = props;
+
+    const endAdornment = (
+        <InputAdornment className={classes.chevronIcon} position='end'>
+            <KeyboardArrowDownIcon />
+        </InputAdornment>
+    );
+    const renderInput = (params) => {
+        const labelClassName = address?.fullAddress && !otherProps.error ? classes.activeLabel : '';
+        const inputLabelPropsObj = {
+            ...params.InputLabelProps,
+            ...InputLabelProps,
+            className: InputLabelProps.className ? clsx(labelClassName, InputLabelProps.className) : labelClassName,
+        };
+        const updatedInputProps = {
+            ...params.InputProps,
+            ...InputProps,
+            className: clsx(classes.input, params.InputProps.className, {
+                [InputProps.className]: Boolean(InputProps.className),
+            }),
+            classes: {
+                ...params.InputProps.classes,
+                adornedEnd: classes.adornedEnd,
+                error: classes.error,
+                focused: classes.focused,
+            },
+            disableUnderline: true,
+            endAdornment,
+        };
+        const textFieldProps = {
+            ...params,
+            ...otherProps,
+            label: 'Location',
+            InputLabelProps: inputLabelPropsObj,
+            InputProps: updatedInputProps,
+            inputProps: {
+                ...params.inputProps,
+                className: clsx(params.inputProps.className, classes.nativeInput),
+            },
+        };
+
+        return <TextField {...textFieldProps} />;
+    };
 
     const {
         clearSuggestions,
@@ -30,7 +75,6 @@ const PlacesSelect = (props) => {
 
     const handleSelect = async (e, val) => {
         setValue(val, false);
-        console.log('val: ', val);
 
         let address = {
             address: null,
@@ -104,7 +148,7 @@ const PlacesSelect = (props) => {
             value={address?.fullAddress}
             onChange={handleSelect}
             onInputChange={handleInput}
-            renderInput={(params) => <TextField {...params} {...props} label='Location' variant='outlined' fullWidth />}
+            renderInput={renderInput}
             renderOption={(option) => {
                 if (option.addPoweredByGoogle) {
                     return (
@@ -148,9 +192,18 @@ const PlacesSelect = (props) => {
     );
 };
 
+PlacesSelect.defaultProps = {
+    InputLabelProps: {},
+    InputProps: {},
+    variant: 'filled',
+};
+
 PlacesSelect.propTypes = {
-    address: PropTypes.string.isRequired,
+    address: PropTypes.object.isRequired,
+    InputLabelProps: PropTypes.object,
+    InputProps: PropTypes.object,
     setAddress: PropTypes.func.isRequired,
+    variant: PropTypes.string,
 };
 
 export default PlacesSelect;
