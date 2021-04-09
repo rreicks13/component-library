@@ -12,6 +12,16 @@ Component library using Material UI
 
 We welcome improvements and fixes via PRs. Review the contributing guidelines below before getting started.
 
+### Running Locally
+
+To run the examples locally, ensure you have your env variables set (in your `.env.local` file for example).
+
+| variable                          | dev/preview           | prod                  |
+| --------------------------------- | --------------------- | --------------------- |
+| `NEXT_PUBLIC_GOOGLE_MAPS_API_KEY` | _google_maps_api_key_ | _google_maps_api_key_ |
+
+Then run `npm run dev`
+
 ### Code Style
 
 We use Prettier with pre-commit hooks to format the majority of our code style preferences.
