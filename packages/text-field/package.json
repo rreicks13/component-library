@@ -1,6 +1,6 @@
 {
     "name": "@tractorzoom/text-field",
-    "version": "0.34.1",
+    "version": "1.0.0",
     "description": "Wrapper for Material UI's TextField",
     "author": "@TractorZoom",
     "license": "MIT",
@@ -30,9 +30,7 @@
     },
     "peerDependencies": {
         "@material-ui/core": "^4.10.2",
-        "@tractorzoom/simple-select": "^1.2.0"
-    },
-    "dependencies": {
+        "@tractorzoom/simple-select": "^1.2.0",
         "clsx": "^1.1.1"
     }
 }
