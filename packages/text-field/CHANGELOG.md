@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/TractorZoom/component-library/compare/@tractorzoom/text-field@0.34.1...@tractorzoom/text-field@1.1.0) (2021-04-10)
+
+
+### Bug Fixes
+
+* pass className to root div when text field has options ([f419c72](https://github.com/TractorZoom/component-library/commit/f419c72079e02fc40a1f278eacc772547f016d9d))
+
+
+### Features
+
+* **breaking:** move clsx to peer dependency for text field ([c23ca3f](https://github.com/TractorZoom/component-library/commit/c23ca3f132c6c18f6703f3dd6d2bb292b9504430))
+* add radio component ([86f860f](https://github.com/TractorZoom/component-library/commit/86f860ff6744fadc72663f725a236101b7f4d1f4))
+
+
+
+
+
 ## [0.34.1](https://github.com/TractorZoom/component-library/compare/@tractorzoom/text-field@0.34.0...@tractorzoom/text-field@0.34.1) (2021-04-02)
 
 **Note:** Version bump only for package @tractorzoom/text-field
