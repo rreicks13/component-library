@@ -76,10 +76,7 @@ const useTextField = (props) => {
 
     return {
         ...otherProps,
-        className: clsx({
-            [classes.optionsTextField]: suffixOptions.length,
-            [otherProps.className]: Boolean(otherProps.className),
-        }),
+        optionsTextFieldClassName: suffixOptions.length ? classes.optionsTextField : '',
         InputLabelProps: inputLabelPropsObj,
         InputProps: updatedInputProps,
         optionsSelectProps: {
