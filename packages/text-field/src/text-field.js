@@ -5,15 +5,15 @@ import SimpleSelect from '@tractorzoom/simple-select';
 import useTextField from './hook';
 
 const TextField = (props) => {
-    const { optionsSelectProps, style, ...textFieldProps } = useTextField(props);
+    const { className, optionsSelectProps, style, ...textFieldProps } = useTextField(props);
 
     return optionsSelectProps.options.length ? (
-        <div style={{ display: 'flex', ...style }}>
-            <MuiTextField {...textFieldProps} />
+        <div className={className} style={{ display: 'flex', ...style }}>
+            <MuiTextField className={className} {...textFieldProps} />
             <SimpleSelect {...optionsSelectProps} />
         </div>
     ) : (
-        <MuiTextField style={style} {...textFieldProps} />
+        <MuiTextField className={className} style={style} {...textFieldProps} />
     );
 };
 
