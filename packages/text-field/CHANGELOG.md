@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/TractorZoom/component-library/compare/@tractorzoom/text-field@1.1.0...@tractorzoom/text-field@1.1.1) (2021-04-10)
+
+
+### Bug Fixes
+
+* correctly pass options text field classname ([c6ed4f6](https://github.com/TractorZoom/component-library/commit/c6ed4f6fc600b93e3ca70676be7e36c07c299713))
+
+
+
+
+
 # [1.1.0](https://github.com/TractorZoom/component-library/compare/@tractorzoom/text-field@0.34.1...@tractorzoom/text-field@1.1.0) (2021-04-10)
 
 
