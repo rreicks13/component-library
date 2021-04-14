@@ -6,9 +6,9 @@ const useStyles = makeStyles((theme) => ({
         color: '#1f6df3 !important',
     },
     chip: {
-        backgroundColor: 'rgba(0, 0, 0, 0.05) !important',
+        backgroundColor: 'rgba(0, 0, 0, 0.05)',
         '&:hover': {
-            backgroundColor: 'rgba(0, 0, 0, 0.08) !important',
+            backgroundColor: 'rgba(0, 0, 0, 0.08)',
         },
     },
 }));
