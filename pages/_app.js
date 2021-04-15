@@ -36,6 +36,13 @@ function App({ Component, pageProps }) {
     const isDarkMode = useDarkMode();
     const theme = React.useMemo(() => ironComps(isDarkMode), [isDarkMode]);
 
+    React.useEffect(() => {
+        const jssStyles = document.querySelector('#jss-server-side');
+        if (jssStyles) {
+            jssStyles.parentElement.removeChild(jssStyles);
+        }
+    }, []);
+
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline />
