@@ -2,8 +2,8 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     active: {
-        backgroundColor: '#e8f0fe !important',
-        color: '#1f6df3 !important',
+        backgroundColor: `${theme.palette.primary.main}1F !important`,
+        color: `${theme.palette.primary.main} !important`,
     },
     chip: {
         backgroundColor: 'rgba(0, 0, 0, 0.05)',
