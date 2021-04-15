@@ -41,6 +41,7 @@
         "@tractorzoom/button": "0.3.0",
         "@tractorzoom/chance-the-wrapper": "2.1.68",
         "@tractorzoom/simple-select": "1.2.0",
+        "autosuggest-highlight": "3.1.1",
         "babel-jest": "26.6.3",
         "babel-loader": "8.2.2",
         "clsx": "1.1.1",
@@ -54,7 +55,8 @@
         "react": "16.14.0",
         "react-dom": "16.14.0",
         "react-test-renderer": "16.14.0",
-        "storybook-host": "5.2.0"
+        "storybook-host": "5.2.0",
+        "use-places-autocomplete": "1.9.1"
     },
     "config": {
         "commitizen": {
