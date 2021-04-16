@@ -1,7 +1,7 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
-const IC_BLACK = '#202020';
+const IC_BLACK = 'rgba(0,0,0,0.92)';
 
 export const useDarkMode = () => useMediaQuery('(prefers-color-scheme: dark)');
 
@@ -38,7 +38,7 @@ const Theme = (useDarkMode) =>
             text: {
                 disabled: useDarkMode ? 'rgba(255, 255, 255, 0.25)' : 'rgba(0, 0, 0, 0.25)',
                 primary: useDarkMode ? '#fff' : IC_BLACK,
-                secondary: useDarkMode ? '#c7c7c7' : '#818181',
+                secondary: useDarkMode ? '#c7c7c7' : 'rgba(0,0,0,0.60)',
             },
             contrastThreshold: 3,
             tonalOffset: 0.2,
