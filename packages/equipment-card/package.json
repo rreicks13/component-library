@@ -1,0 +1,38 @@
+{
+    "name": "@tractorzoom/equipment-card",
+    "version": "1.0.0",
+    "description": "Equipment Details Card",
+    "author": "@TractorZoom",
+    "license": "MIT",
+    "main": "lib/index.js",
+    "engines": {
+        "node": "12.x"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/TractorZoom/component-library.git"
+    },
+    "homepage": "https://github.com/TractorZoom/component-library/packages/equipment-card/README.md",
+    "bugs": {
+        "url": "https://github.com/TractorZoom/component-library/issues"
+    },
+    "keywords": [
+        "equipment",
+        "equipment details",
+        "equipment card"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "build": "../../node_modules/.bin/babel src --out-dir lib --copy-files",
+        "prepublish": "npm run build"
+    },
+    "peerDependencies": {
+        "@material-ui/core": "^4.10.2",
+        "@material-ui/icons": "^4.11.2",
+        "@tractorzoom/equipment-attributes": "^5.3.0",
+        "clsx": "^1.1.1",
+        "moment": "^2.29.1"
+    }
+}
