@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/TractorZoom/component-library/compare/@tractorzoom/simple-select@1.2.0...@tractorzoom/simple-select@1.3.0) (2021-04-16)
+
+
+### Features
+
+* add radio component ([86f860f](https://github.com/TractorZoom/component-library/commit/86f860ff6744fadc72663f725a236101b7f4d1f4))
+* add styling for simple select without label ([2536767](https://github.com/TractorZoom/component-library/commit/25367671de3a991c302526d956730b8132e6b65b))
+
+
+
+
+
 # [1.2.0](https://github.com/TractorZoom/component-library/compare/@tractorzoom/simple-select@1.1.0...@tractorzoom/simple-select@1.2.0) (2021-04-02)
 
 

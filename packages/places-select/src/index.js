@@ -1,6 +1,8 @@
-const PlacesSelect = require('./places-select');
+const { PlacesSelect } = require('./places-select');
 const utilities = require('./utilities');
 
-exports.getFullAddressString = utilities.getFullAddressString;
-
-module.exports = PlacesSelect;
+module.exports = {
+    PlacesSelect: PlacesSelect,
+    getFullAddressString: utilities.getFullAddressString,
+    getLatLon: utilities.getLatLon,
+};
