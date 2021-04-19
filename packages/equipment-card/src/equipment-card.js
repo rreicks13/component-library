@@ -5,6 +5,7 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import CheckRoundedIcon from '@material-ui/icons/CheckRounded';
+import { DateTime } from 'luxon';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
@@ -12,13 +13,12 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import clsx from 'clsx';
-import moment from 'moment';
 import useStyles from './styles';
 
 const EquipmentCard = (props) => {
     const classes = useStyles();
     const saleDate = props.saleDate ? props.saleDate : props.auctionDate;
-    const formattedDate = moment(saleDate).format('L');
+    const formattedDate = DateTime.fromISO(saleDate).toLocaleString();
     const isSelected = props.selectedEquipmentSet.has(props.id);
     const variableDetail = getVariableDetail(props);
     const variableDetailStyle = variableDetail.length >= 18 ? { fontSize: 14 } : {};
