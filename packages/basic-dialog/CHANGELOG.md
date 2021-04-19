@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.33.0](https://github.com/TractorZoom/component-library/compare/@tractorzoom/basic-dialog@0.32.0...@tractorzoom/basic-dialog@0.33.0) (2021-04-15)
+
+
+### Bug Fixes
+
+* update background color for dialog ([7ea20fc](https://github.com/TractorZoom/component-library/commit/7ea20fc2d7f2d5868380d8ba8750bedf27d45dd2))
+
+
+### Features
+
+* add radio component ([86f860f](https://github.com/TractorZoom/component-library/commit/86f860ff6744fadc72663f725a236101b7f4d1f4))
+
+
+
+
+
 # 0.32.0 (2021-03-22)
 
 

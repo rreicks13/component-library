@@ -32,6 +32,13 @@ function App({ Component, pageProps }) {
         loaded.current = true;
     }
 
+    React.useEffect(() => {
+        const jssStyles = document.querySelector('#jss-server-side');
+        if (jssStyles) {
+            jssStyles.parentElement.removeChild(jssStyles);
+        }
+    }, []);
+
     return (
         <ThemeProvider theme={ironComps}>
             <CssBaseline />
