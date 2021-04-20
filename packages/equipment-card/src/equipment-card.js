@@ -93,7 +93,7 @@ const EquipmentCard = (props) => {
                     <Divider />
                     <div className={classes.locationAndSaleDate}>
                         <Typography className={classes.detailsText} data-cy='equipment-card-location'>
-                            <LocationOnIcon style={{ height: 16, width: 16 }} />
+                            <LocationOnIcon style={{ height: 16, marginBottom: 4, width: 16 }} />
                             {getLocation(props)}
                         </Typography>
                         <Typography className={classes.detailsText} data-cy='equipment-card-sale-date'>
