@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/TractorZoom/component-library/compare/@tractorzoom/equipment-card@1.1.0...@tractorzoom/equipment-card@1.1.1) (2021-04-20)
+
+
+### Bug Fixes
+
+* add missing margin bottom style ([3bf08b9](https://github.com/TractorZoom/component-library/commit/3bf08b9d086c6fb4a4b1cb48b2125e844e9055b6))
+
+
+
+
+
 # 1.1.0 (2021-04-19)
 
 
