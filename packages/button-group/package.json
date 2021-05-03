@@ -32,7 +32,7 @@
     },
     "peerDependencies": {
         "@material-ui/core": "^4.10.2",
-        "@tractorzoom/button": "0.x.0"
+        "@tractorzoom/button": "0.x"
     },
     "dependencies": {
         "clsx": "1.1.1"
