@@ -1,5 +1,5 @@
 import usePlacesAutocomplete, { getGeocode, getLatLng } from 'use-places-autocomplete';
-import Autocomplete from '@material-ui/lab/Autocomplete';
+import Autocomplete from '@material-ui/core/Autocomplete';
 import Grid from '@material-ui/core/Grid';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
@@ -139,7 +139,7 @@ export const PlacesSelect = (props) => {
     return (
         <Autocomplete
             className={props.className}
-            getOptionLabel={(option) => (typeof option === 'string' ? option : option.description)}
+            getOptionLabel={(option) => (typeof option === 'string' ? option : option.description ?? '')}
             filterOptions={(x) => x}
             options={status === 'OK' ? [...data, { addPoweredByGoogle: true }] : []}
             autoComplete
@@ -149,17 +149,19 @@ export const PlacesSelect = (props) => {
             onChange={handleSelect}
             onInputChange={handleInput}
             renderInput={renderInput}
-            renderOption={(option) => {
+            renderOption={(props, option) => {
                 if (option.addPoweredByGoogle) {
                     return (
-                        <Grid key='poweredByGoogle' container justify='flex-end'>
-                            <Grid item>
-                                <img
-                                    src='https://developers.google.com/maps/documentation/images/powered_by_google_on_white.png'
-                                    alt='Powered by Google'
-                                />
+                        <li {...props}>
+                            <Grid key='poweredByGoogle' container justify='flex-end'>
+                                <Grid item>
+                                    <img
+                                        src='https://developers.google.com/maps/documentation/images/powered_by_google_on_white.png'
+                                        alt='Powered by Google'
+                                    />
+                                </Grid>
                             </Grid>
-                        </Grid>
+                        </li>
                     );
                 }
 
@@ -170,22 +172,24 @@ export const PlacesSelect = (props) => {
                 );
 
                 return (
-                    <Grid container alignItems='center'>
-                        <Grid item>
-                            <LocationOnIcon className={classes.icon} />
-                        </Grid>
-                        <Grid item xs>
-                            {parts.map((part, index) => (
-                                <span key={index} style={{ fontWeight: part.highlight ? 700 : 400 }}>
-                                    {part.text}
-                                </span>
-                            ))}
+                    <li {...props}>
+                        <Grid container alignItems='center'>
+                            <Grid item>
+                                <LocationOnIcon className={classes.icon} />
+                            </Grid>
+                            <Grid item xs>
+                                {parts.map((part, index) => (
+                                    <span key={index} style={{ fontWeight: part.highlight ? 700 : 400 }}>
+                                        {part.text}
+                                    </span>
+                                ))}
 
-                            <Typography variant='body2' color='textSecondary'>
-                                {option.structured_formatting.secondary_text}
-                            </Typography>
+                                <Typography variant='body2' color='textSecondary'>
+                                    {option.structured_formatting.secondary_text}
+                                </Typography>
+                            </Grid>
                         </Grid>
-                    </Grid>
+                    </li>
                 );
             }}
         />

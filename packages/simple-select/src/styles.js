@@ -17,13 +17,16 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: 'rgba(0, 0, 0, 0.05) !important',
         border: `2px solid transparent`,
         borderRadius: 8,
+        '& div': {
+            padding: '25px 12px 8px',
+        },
         '&:hover': {
             backgroundColor: 'rgba(0, 0, 0, 0.08) !important',
         },
     },
     noLabel: {
         '& div': {
-            padding: '12px 12px 10px',
+            padding: '10px 12px 8px',
         },
     },
 }));

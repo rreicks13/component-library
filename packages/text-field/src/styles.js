@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
     },
     optionsSelectLabel: {
         fontSize: 12,
-        padding: `19px 12px 18px`,
+        padding: `17px 12px 16px`,
     },
     optionsTextField: {
         flexGrow: 1,

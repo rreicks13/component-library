@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { ThemeProvider } from '@material-ui/core/styles';
 import { ironComps } from '../packages/theme/src/index';
+import StyledEngineProvider from '@material-ui/core/StyledEngineProvider';
 import '../styles.css';
 
 function loadScript(src, position, id) {
@@ -40,10 +41,12 @@ function App({ Component, pageProps }) {
     }, []);
 
     return (
-        <ThemeProvider theme={ironComps}>
-            <CssBaseline />
-            <Component {...pageProps} />
-        </ThemeProvider>
+        <StyledEngineProvider injectFirst>
+            <ThemeProvider theme={ironComps}>
+                <CssBaseline />
+                <Component {...pageProps} />
+            </ThemeProvider>
+        </StyledEngineProvider>
     );
 }
 

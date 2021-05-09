@@ -1,4 +1,4 @@
-import Autocomplete from '@material-ui/lab/Autocomplete';
+import Autocomplete from '@material-ui/core/Autocomplete';
 import Listbox from './listbox';
 import PropTypes from 'prop-types';
 import React from 'react';
